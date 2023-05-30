@@ -7,4 +7,6 @@ public class MovieMapping {
     String company;
     String detail_url;
     String my_id;
+    String docid;
+    String kmdb_url;
 }

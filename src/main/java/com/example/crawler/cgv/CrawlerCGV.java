@@ -80,12 +80,18 @@ public class CrawlerCGV implements CrawlerInterface {
                         List<WebElement> screenTimes = hall.findElement(By.className("info-timetable")).findElements(By.tagName("li"));
                         screenTimes.forEach(screenTime -> {
                             Screen screen = new Screen();
-                            screen.setScreen_type(wes.get(1).getText());
-                            screen.setScreen_name(wes.get(2).getText());
-                            WebElement a = screenTime.findElement(By.tagName("a"));
-                            screen.setScreen_startTime(a.getAttribute("data-playstarttime"));
-                            screen.setScreen_endTime(a.getAttribute("data-playendtime"));
-                            colTime.getScreens().add(screen);
+                            screen.setScreen_name(wes.get(1).getText());
+                            screen.setScreen_seats(wes.get(2).getText());
+                            WebElement a;
+                            try {
+                                a = screenTime.findElement(By.tagName("a"));
+                                screen.setScreen_startTime(a.getAttribute("data-playstarttime"));
+                                screen.setScreen_endTime(a.getAttribute("data-playendtime"));
+                                colTime.getScreens().add(screen);
+                            }catch (Exception e){
+                                e.printStackTrace();
+                                System.out.println(colTime.getMovie_title() + " : 예매가능한 시간이 없습듯?");
+                            }
                         });
                     }
                 crawlResult.getColTimes().add(colTime);
@@ -131,6 +137,7 @@ public class CrawlerCGV implements CrawlerInterface {
             String plot = doc.getElementsByClass("sect-story-movie").get(0).text();
 
             MovieDetailCrawlResult movieDetailCrawlResult = new MovieDetailCrawlResult();
+            movieDetailCrawlResult.setUrl(url);
             movieDetailCrawlResult.setTitle(title1);
             movieDetailCrawlResult.setTitleOther(title2);
             movieDetailCrawlResult.setDirectors(Arrays.asList(directors));
