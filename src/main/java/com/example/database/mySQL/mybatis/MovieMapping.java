@@ -9,4 +9,5 @@ public class MovieMapping {
     String my_id;
     String docid;
     String kmdb_url;
+    String my_title;
 }

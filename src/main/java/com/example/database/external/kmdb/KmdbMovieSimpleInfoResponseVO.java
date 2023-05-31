@@ -54,6 +54,7 @@ public class KmdbMovieSimpleInfoResponseVO {
             private String rating;
             private String genre;
             private String kmdbUrl;
+            private String posters;
 
             @Data
             @JsonIgnoreProperties(ignoreUnknown = true)

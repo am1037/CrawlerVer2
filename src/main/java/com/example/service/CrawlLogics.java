@@ -8,8 +8,8 @@ import com.example.database.external.kmdb.KmdbAPI;
 import com.example.database.external.kmdb.KmdbMovieSimpleInfoResponseVO;
 import com.example.database.mongoDB.DoorToMongoDB;
 import com.example.database.mySQL.mybatis.*;
-import org.apache.ibatis.exceptions.PersistenceException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DuplicateKeyException;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -71,7 +71,22 @@ public class CrawlLogics {
 
         return "Crawling Done";
     }
-    @RequestMapping("/c1")
+
+    @RequestMapping("/crawlEverywhere")
+    public String crawlOneday(@RequestParam(required = false) String date) {
+
+        List<Theater> targetTheaterList = tm.selectAllByCompanyName("CGV");
+
+        for (Theater t : targetTheaterList) {
+            crawl(t.getTheater_id(), date);
+        }
+        //crawl(targetTheaterList, date);
+        fillDOCID();
+
+        return "Crawling Done";
+    }
+
+    //@RequestMapping("/c1") c2에 포함되어 있으므로 일단 비활성화
     public String fillMappingTable(){
         /*
         일단 mapping table(mysql)에서 movie id가 미지정, 즉 null인 row들을 찾는다
@@ -86,17 +101,17 @@ public class CrawlLogics {
             KmdbMovieSimpleInfoResponseVO infoFromKmdb = kmdbAPI.getMovieInfoByTitle(infoFromMongoDB.getTitle());
             List<KmdbMovieSimpleInfoResponseVO.Collection.Movie> movieList = infoFromKmdb.getMovies(0);
             if(movieList == null){
-                mmm.updateDocid(x, "!NOT FOUND", "!NOT FOUND");
+                mmm.updateDocidAndPosters(x, "!NOT FOUND", "!NOT FOUND", "!NOT FOUND");
             }else if(movieList.size() == 1) {
-                mmm.updateDocid(x, movieList.get(0).getDOCID(), movieList.get(0).getKmdbUrl());
+                mmm.updateDocidAndPosters(x, movieList.get(0).getDOCID(), movieList.get(0).getKmdbUrl(), movieList.get(0).getPosters());
             }else if(movieList.size() > 1){
                 movieList = infoFromKmdb.getMovies(0).stream().filter(m -> m.getRuntime().equals(infoFromMongoDB.getRuntime())).collect(Collectors.toList());
                 if(movieList.size() == 1) {
-                    mmm.updateDocid(x, movieList.get(0).getDOCID(), movieList.get(0).getKmdbUrl());
+                    mmm.updateDocidAndPosters(x, movieList.get(0).getDOCID(), movieList.get(0).getKmdbUrl(), movieList.get(0).getPosters());
                 }else if(movieList.size() > 1){
                     movieList = infoFromKmdb.getMovies(0).stream().filter(m -> m.getTitleEng().equals(infoFromMongoDB.getTitleOther())).collect(Collectors.toList());
                 }else {
-                    mmm.updateDocid(x, "!NOT FOUND", "!NOT FOUND");
+                    mmm.updateDocidAndPosters(x, "!NOT FOUND", "!NOT FOUND", "!NOT FOUND");
                 }
             }
         });
@@ -105,18 +120,28 @@ public class CrawlLogics {
 
     @RequestMapping("/c2")
     public String fillDOCID(){
+        Date now = new Date();
+        String returnStr = "c2 : fillDOCID\n";
+        returnStr += "Start Time : " + now.toString() + "\n";
 
+        //일단 영화 목록에서 docid가 null인 경우를 가져온다
         List<ScreenVO> vos = sm.selectByDocidNull();
         Set<String> set = new HashSet<>();
         vos.forEach(vo -> {
             set.add(vo.getDetail_url());
         });
 
+
+        //이 url들을 mapping table에 넣는다
         for(String s : set){
             MovieMapping mm = new MovieMapping();
             mm.setCompany("CGV");
             mm.setDetail_url(s);
-            mmm.insertUrl(mm);
+            try {
+                mmm.insertUrl(mm);
+            }catch (Exception e){
+                System.out.println("Already Exist");
+            }
         }
 
         fillMappingTable();
@@ -130,52 +155,78 @@ public class CrawlLogics {
             sm.updateDocid(m.getDocid(), m.getDetail_url());
         }
 
-        return "Done";
+        now = new Date();
+        returnStr += "End Time : " + now.toString() + "\n";
+
+        return returnStr;
+    }
+
+    @RequestMapping("/c3")
+    public String fillTitle(){
+        String returnStr = "c3 : fillTitle\n";
+        Date now = new Date();
+        returnStr += "Start Time : " + now.toString() + "\n";
+
+        Map<String, MovieMapping> mmMap = mmm.getAllMappingsTitleIsNull();
+        for(String s : mmMap.keySet()){
+            mmm.updateTitleByUrl(s, doorToMongoDB.selectOneByUrl(s).getTitle());
+        }
+
+        now = new Date();
+        returnStr += "End Time : " + now.toString() + "\n";
+        return returnStr;
     }
 
     public CrawlResult crawl(@RequestParam String theaterId,
-                        @RequestParam String date) {
+                             @RequestParam String date) {
         System.out.println("Crawling Start... " + theaterId + " " + date);
         System.out.println("Crawling Start... " + theaterId + " : " + theaterCode("CGV", theaterId));
-        CrawlResult cr = cgv.crawl(theaterId, date);
-        List<ColTime> colTimeList = cr.getColTimes();
-        colTimeList.forEach(ct -> {
+        List<ColTime> colTimeList;
+        try {
+            CrawlResult cr = cgv.crawl(theaterId, date);
+            colTimeList = cr.getColTimes();
+
+            colTimeList.forEach(ct -> {
+                /*
+                일단 mapper db에는 죄다 넣는다
+                pk가 알아서 걸러줄 것이다
+                 */
+                try {
+                    MovieMapping mm = new MovieMapping();
+                    mm.setCompany("CGV");
+                    mm.setDetail_url(ct.getUrl());
+                    mmm.insertUrl(mm);
+                }catch (DuplicateKeyException e){
+                    System.out.println("Duplicate Entry");
+                }
+
+                if(!isExistMongo(ct.getUrl())) { //존재하지 않을 경우
+                    //cgv에서 크롤해서 채워넣는다
+                    System.out.println("Crawling Movie Detail... " + ct.getUrl());
+                    MovieDetailCrawlResult result = cgv.crawlMovie(ct.getUrl());
+                    doorToMongoDB.insertOne(result);
+                }
+            });
+
             /*
-            일단 mapper db에는 죄다 넣는다
-            pk가 알아서 걸러줄 것이다
+            MongoDB의 정보는 추후 kmdb 등과의 대조 후 고유 id를 부여하기 위해 사용하지만,
+            일단 크롤링 한 상영관 자체는 우리쪽 db에 집어넣는다
              */
             try {
-                MovieMapping mm = new MovieMapping();
-                mm.setCompany("CGV");
-                mm.setDetail_url(ct.getUrl());
-                mmm.insertUrl(mm);
-            }catch (PersistenceException e){
-                System.out.println("Duplicate Entry");
+                for(ScreenVO s : cr.toScreenVOs()) {
+                    sm.insert(s);
+                }
+                return cr;
+            } catch (Exception e) {
+                e.printStackTrace();
+                cr = new CrawlResult();
+                cr.setCompany("ERROR");
+                return cr;
             }
-
-            if(!isExistMongo(ct.getUrl())) { //존재하지 않을 경우
-                //cgv에서 크롤해서 채워넣는다
-                System.out.println("Crawling Movie Detail... " + ct.getUrl());
-                MovieDetailCrawlResult result = cgv.crawlMovie(ct.getUrl());
-                doorToMongoDB.insertOne(result);
-            }
-        });
-
-        /*
-        MongoDB의 정보는 추후 kmdb 등과의 대조 후 고유 id를 부여하기 위해 사용하지만,
-        일단 크롤링 한 상영관 자체는 우리쪽 db에 집어넣는다
-         */
-        try {
-            for(ScreenVO s : cr.toScreenVOs()) {
-                sm.insert(s);
-            }
-            return cr;
-        } catch (Exception e) {
-            e.printStackTrace();
-            cr = new CrawlResult();
-            cr.setCompany("ERROR");
-            return cr;
+        }catch (Exception e){
+            doorToMongoDB.insertOne(e.getMessage(), theaterId, date);
         }
+        return null;
     }
 
     public boolean isExistMongo(String url) {

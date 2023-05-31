@@ -13,6 +13,8 @@ import com.mongodb.client.model.UpdateOptions;
 import org.bson.Document;
 import org.springframework.stereotype.Component;
 
+import java.util.Date;
+
 @Component
 public class DoorToMongoDB {
     String url = "mongodb://localhost:27017";
@@ -106,6 +108,22 @@ public class DoorToMongoDB {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public void insertOne(String errorMessage, String theaterCode, String targetDate){
+        Document document = new Document();
+        document.append("time", new Date());
+        document.append("error", errorMessage);
+        document.append("theater_code", theaterCode);
+        document.append("target_date", targetDate);
+
+        try(MongoClient mongoClient = MongoClients.create(url)) {
+            MongoDatabase db = mongoClient.getDatabase(dbName);
+
+            MongoCollection<Document> collection = db.getCollection("error_log");
+
+            collection.insertOne(document);
+        }
     }
 
 }

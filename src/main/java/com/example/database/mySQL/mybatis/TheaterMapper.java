@@ -14,5 +14,7 @@ public interface TheaterMapper {
     @Select("SELECT * FROM popcorn.theater WHERE theater_company = #{theater_company} AND theater_id = #{theater_id}")
     Theater getTheaterById(@Param("theater_company") String theater_company, @Param("theater_id") String theater_id);
 
+    @Select("SELECT * FROM popcorn.theater WHERE theater_company = #{theater_company}")
+    List<Theater> selectAllByCompanyName(@Param("theater_company") String theater_company);
 
 }

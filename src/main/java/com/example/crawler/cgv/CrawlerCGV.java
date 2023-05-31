@@ -32,7 +32,7 @@ public class CrawlerCGV implements CrawlerInterface {
     public CrawlResult crawl(String theater, String date) {
         String s1 = str1 + theater;
         String s2 = str2 + date;
-        WebDriver driver;
+        WebDriver driver = null;
 
         CrawlResult crawlResult = new CrawlResult();
         crawlResult.setCompany("CGV");
@@ -89,8 +89,8 @@ public class CrawlerCGV implements CrawlerInterface {
                                 screen.setScreen_endTime(a.getAttribute("data-playendtime"));
                                 colTime.getScreens().add(screen);
                             }catch (Exception e){
-                                e.printStackTrace();
-                                System.out.println(colTime.getMovie_title() + " : 예매가능한 시간이 없습듯?");
+                                //e.printStackTrace();
+                                System.out.println(colTime.getMovie_title() + " : 예매가능한 시간이 없는듯?");
                             }
                         });
                     }
@@ -100,6 +100,7 @@ public class CrawlerCGV implements CrawlerInterface {
             return crawlResult;
 
             } catch (TimeoutException e) {
+            if(driver!=null) driver.close();
             e.printStackTrace();
         }
         return null;

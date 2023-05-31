@@ -32,7 +32,7 @@ public class KmdbAPI {
         String key = "&ServiceKey="+System.getenv("key4kmdb");
         String str = "http://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?collection=kmdb_new2&detail=Y&listCount=20";
         KmdbAPI kmdbAPI = new KmdbAPI();
-        String title = "극장판 포켓몬스터 DP-아르세우스 초극의 시공으로";
+        String title = "캐리 러브 콘서트";
 
         try {
             String encodedTitle = URLEncoder.encode(title, StandardCharsets.UTF_8.toString());
