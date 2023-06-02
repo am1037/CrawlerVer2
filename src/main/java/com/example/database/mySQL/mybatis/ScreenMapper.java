@@ -29,7 +29,7 @@ public interface ScreenMapper {
     void insert(ScreenVO screen);
 
     @Select("SELECT * FROM popcorn.theater where theater_region = #{theater_region}")
-    List<Theater> selectByRegion(@Param("theater_region") String region);
+    List<TheaterVO> selectByRegion(@Param("theater_region") String region);
 
     @Select("SELECT * FROM popcorn.movie_screen where movie_docid is null")
     List<ScreenVO> selectByDocidNull();

@@ -1,0 +1,89 @@
+{
+  CinemaDetail={
+  CinemaKeyVisual=,
+  SpecialScreenDivisionCode=[
+  930
+], CinemaIntro=, Address=서울 금천구 디지털로10길 9 (가산동), BusMap=[지선] 5536, 5616, 5712, 5714
+[간선] 503, 504, 571, 652
+·구로방면: 금천 패션아울렛 사거리 [W몰] 하차하여 현대아울렛까지 도보 2분 이동
+·가산디지털 방면: 금천 패션아울렛 사거리 [마리오 아울렛] 하차하여 현대아울렛까지 도보 2분 이동
+안내되어있는 버스 노선 변경 등에 따라 오시는 길이 변경될 수 있습니다.출발 전 버스 노선을 반드시 확인해주세요., SubWayMap=[1호선 가산디지털단지역 하차]: 1번 출구 앞 시내 버스 정류장에서 5616, 5712 이용하여 [W몰] 정류장 하차 후 현대아울렛까지 도보 2분 이동 / 4번 출구에서 도보 600M 이동
+[건물 영업시간 외 이용방법]: 도보 이동 시 현대아울렛 옆 우리은행 건물에서 우회전하여 춘천옥 맞은편 출입구 이용 / 자차 이동 시 현대아울렛 주차장 이용(상시 개방), MyCarMap=네비게이션 이용 시: 서울시 금천구 디지털로 10길 9, 현대아울렛
+남부순환도로 공항 방면으로 시흥IC를 500M 지나, 디지털단지 오거리를 건넌 후, 고가 아래에서 U턴 → 가산로를 따라 100M 이동 후, 지웰에스테이트 골목으로 우회전 → 현대아울렛 후문에서 좌회전
+가산디지털 쇼핑몰 지하 2F~5F / 총 902대, ParkingInfo=티켓 제시시 3시간 무료주차/ 추가 10분당 500원, TotalScreenCount=6, TotalSeatCount=1054, IsFavoriteCinema=, DivisionCode=1, DetailDivisionCode=0001, DetailDivisionNameKR=null, CinemaID=1013, CinemaNameKR=가산디지털, CinemaNameUS=Gasan Digital, CinemaName=null, SortSequence=0, Latitude=37.4775952, Longitude=126.8890717, Distance=0.0, SmartOrderYN=null, OpenDtYN=null, StageGreetingYN=null, CinemaAreaCode=null, CinemaAddrSummary=null, CinemaAreaName=null, CinemaAreaSort=0, Active=0, CinemaOprtDivCd=null}, IsOK=true, ResultMessage=SUCCESS, ResultCode=null, EventResultYn=null}
+롯데시네마 가산디지털 1 1013 https://www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&detailDivisionCode=1&cinemaID=1013
+{
+CinemaDetail={
+CinemaKeyVisual=, SpecialScreenDivisionCode=[], CinemaIntro=, Address=서울 강서구 양천로 476 (등촌동) 4층, BusMap=652, 672, 6632 이용 시 가양역 정류장에서 하차
+673, 6627, 6642, 6645, 6715, 8000, 마을버스 강서 04, 05 이용 시 마포 중고등학교정류소에서 하차 후 가양역 9번출구 방면, SubWayMap=9호선 가양역: 9번 출구 (도보 직진 50미터 > 좌측 건물 진입 > 엘리베이터 이용 5층), MyCarMap=화곡 및 신월 방면에서 오실 경우 : 가양역 사거리에서 좌회전 후 유턴, 금부타워 주차장으로 진입
+마곡 및 방화 방면에서 오실 경우: 양천향교역을 지나 1km 직진 후 우측 금부타워 주차장으로 진입
+상암방면에서 오실 경우: 가양대교를 건너 가양역 사거리에서 직진하여 가양역 8번 출구 오른쪽 골목길로 우회전, P턴하여 금부타워 주차장으로 진입, ParkingInfo=ㆍ영화관람 시, 4층 매점에서 차량번호 등록 필수 (입차시간부터 최대 3시간 무료주차 /추가 10분당 1, 000원 부과)
+ㆍ주차등록을 하지 않고 요금을 지불하시는 경우 환불이 불가합니다.
+ㆍ주차장이 협소 하오니 가급적 대중교통을 이용을 부탁드립니다., TotalScreenCount=6, TotalSeatCount=444, IsFavoriteCinema=, DivisionCode=1, DetailDivisionCode=0001, DetailDivisionNameKR=null, CinemaID=9094, CinemaNameKR=가양, CinemaNameUS=Gayang, CinemaName=null, SortSequence=0, Latitude=37.5615798, Longitude=126.8532847, Distance=0.0, SmartOrderYN=null, OpenDtYN=null, StageGreetingYN=null, CinemaAreaCode=null, CinemaAddrSummary=null, CinemaAreaName=null, CinemaAreaSort=0, Active=0, CinemaOprtDivCd=null}, IsOK=true, ResultMessage=SUCCESS, ResultCode=null, EventResultYn=null}
+롯데시네마 가양 1 9094 https: //www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&detailDivisionCode=1&cinemaID=9094
+{CinemaDetail={CinemaKeyVisual=, SpecialScreenDivisionCode=[], CinemaIntro=, Address=서울 강동구 성내동, 44-1, BusMap=간선버스 (B): 130번, 300번, 361번, 370번
+지선버스 (G): 3211번, 3212번, 3214번, 3311번,3411번, 3412번, 3413번, 4213번
+광역버스 (R): 9301번, 606번, SubWayMap=지하철 5호선 천호역 6번 출구: 지하철 5호선 천호역에서 하차하신 후 6번출구로 나오셔서 길동사거리 방면(출구 방향)으로 직진, 국민은행 오른쪽 골목으로 약 50미터 들어오시면 우측에 위치하고 있습니다., MyCarMap=서울특별시 강동구 천호옛길 85 (성내동), ParkingInfo=평일, 주말, 공휴일 모두 3시간에 3, 000원이 부과되며, 3시간 이후부터는 10분에 500원이 추가로 부과
+주말에는 항상 만차가 되오니 가급적이면 대중교통 이용 부탁드립니다.
+영화관 만차 시 인근 주차장을 별도로 이용하셔야하며, 주차요금 할인은 받으실 수 없습니다.
+출차 시 극장표를 반드시 지참하시기 바랍니다., TotalScreenCount=10, TotalSeatCount=1742, IsFavoriteCinema=, DivisionCode=1, DetailDivisionCode=0001, DetailDivisionNameKR=null, CinemaID=9010, CinemaNameKR=강동, CinemaNameUS=Kangdong, CinemaName=null, SortSequence=0, Latitude=37.5366275939741, Longitude=127.125337325468, Distance=0.0, SmartOrderYN=null, OpenDtYN=null, StageGreetingYN=null, CinemaAreaCode=null, CinemaAddrSummary=null, CinemaAreaName=null, CinemaAreaSort=0, Active=0, CinemaOprtDivCd=null}, IsOK=true, ResultMessage=SUCCESS, ResultCode=null, EventResultYn=null
+}
+롯데시네마 강동 1 9010 https: //www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&detailDivisionCode=1&cinemaID=9010
+{CinemaDetail={CinemaKeyVisual=, SpecialScreenDivisionCode=[300, 980], CinemaIntro=, Address=서울 광진구 아차산로 262 (자양동, 더샵스타시티), BusMap=건대역(건대입구 방면) _ 240, 721, 2222, 2224, 350, 광진05: 건대입구역 사거리 방면 직진 후 사거리에서 롯데백화점 우측으로 200m 직진(이마트 방향) >첫번째 횡단보도 지난 후 우측 스타시티 쇼핑몰(이마트)  GATE 1 진입 > 좌측으로 5m 이동 후 엘리베이터 이용(2층)  > 우측 홀 이동<br></br>
+건대역(대동아파트앞 방면) _ 240, 721, 2222, 2224, 3500, 광진05: 건대입구역 사거리 방면 직진 후 횡단보도 이용 롯데백화점 방면 이동 후 백화점 좌측으로 200m 직진(이마트 방향) >첫번째 횡단보도 지난 후 우측 스타시티 쇼핑몰(이마트)  GATE 1 진입 > 좌측으로 5m 이동 후 엘리베이터 이용(2층)  > 우측 홀 이동<br></br>
+건대입구역 사거리.건대병원(어린이대공원역, 화양천주교교회 방면) _2016, 3217, 3220, 4212: 건대입구역 사거리 방면 직진 후 횡단보도 이용 롯데백화점 방면 이동 후 백화점 좌측으로 200m 직진 (이마트 방향) >첫번째 횡단보도 지난 후 우측 스타시티 쇼핑몰(이마트)  GATE 1 진입 > 좌측으로 5m 이동 후 엘리베이터 이용(2층)   > 우측 홀 이동<br></br>
+건대입구역 사거리.건대병원(건대역 방면) _240, 721, 2016, 3217, 3220, 4212, 102, 3500: 건대입구역 사거리 방면 직진 후 횡단보도 이용 롯데백화점 방면 이동 후 백화점 좌측으로 200m 직진 (이마트 방향) >첫번째 횡단보도 지난 후 우측 스타시티 쇼핑몰(이마트)  GATE 1 진입 > 좌측으로 5m 이동 후 엘리베이터 이용(2층)  > 우측 홀 이동<br></br>, SubWayMap=2호선 건대입구역 하차: 건대입구역 5번 출구 방향 이동 > 정면 횡단보도 이용 후 200m 직진 > 첫번째 횡단보도 지난 후 우측 스타시티 쇼핑몰(이마트)  GATE 1 진입 > 좌측으로 5m 이동 후 엘리베이터 이용(2층)  > 우측 홀 이동<br></br>
+7호선 건대입구역 하차 : 건대입구역 4번 출구 방향 좌측 롯데백화점 연결 통로(B1층)  이용하여 스타시티 쇼핑몰 진입 >정면 에스컬레이터 이용 2층 이동>우측 Emoi 쌀국수 앞 구름다리 이용 롯데시네마 진입<br></br>, MyCarMap=[내비게이션 검색] <font color=red><b>롯데시네마 건대입구</b><br><font color=gray>서울특별시 광진구 아차산로 272 (광진구 자양동 227-7): 스타시티 쇼핑몰(이마트) 지상 2층 위치<br></br>
+<b>[주차장 이용방법]</b><br><font color=gray>(1)지하 주차장(건물 지하 2층 ~ 지하 3층)<br><font color=gray>(2)주차 대수 (총 1, 058대)<br>(3)영화관 인접구역 <br><font color=red>&nbsp;&nbsp;&nbsp;지하 2층  C구역 / 지하 3층 G구역<br><font color=gray>(4)영화관 오시는 길 <br>&nbsp;&nbsp;&nbsp;주차 후 영화관 인접구역 엘리베이터 탑승<br>&nbsp;&nbsp;&nbsp;&nbsp; >&nbsp;지상 2층 하차 후 우측 롯데시네마 홀 이동<br></br>, ParkingInfo=<font color=red>영화 관람 당일 3시간 무료 (기본 30분 무료 포함): 초과 시 10분당 1, 000원 / 쇼핑몰 구매금액 합산 가능 (최대 5시간 무료)<br></br>
+[주차권 안내]<font color=gray><br>(1)모바일티켓 _ 바로티켓 우측 상단 주차권 버튼 클릭시 바코드 생성<br>(2)지류티켓 _ 영화티켓 하단 주차권 바코드 사용: 주차권 미출력시 스위트샵 방문<br></br>
+[주차 정산]<br><font color=gray>(1)출차시 출구쪽 유인 정산소 주차권 제시<br>(2)출차시 무인정산기 사전 정산(정산 후 20분내 미출차시 추가 요금 발생): 차량번호 입력 후 주차권 바코드 스캔<br></br>
+[무인 정산기 위치]<br><font color=gray>지하 2, 3층 엘리베이터 앞 </br>, TotalScreenCount=11, TotalSeatCount=2170, IsFavoriteCinema=, DivisionCode=1, DetailDivisionCode=0001, DetailDivisionNameKR=null, CinemaID=1004, CinemaNameKR=건대입구, CinemaNameUS=Konkuk Univ, CinemaName=null, SortSequence=0, Latitude=37.538553, Longitude=127.073184, Distance=0.0, SmartOrderYN=null, OpenDtYN=null, StageGreetingYN=null, CinemaAreaCode=null, CinemaAddrSummary=null, CinemaAreaName=null, CinemaAreaSort=0, Active=0, CinemaOprtDivCd=null}, IsOK=true, ResultMessage=SUCCESS, ResultCode=null, EventResultYn=null
+}
+롯데시네마 건대입구 1 1004 https: //www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&detailDivisionCode=1&cinemaID=1004
+{
+CinemaDetail={
+CinemaKeyVisual=, SpecialScreenDivisionCode=[300], CinemaIntro=, Address=서울 강서구 하늘길 지하 77 (방화동), BusMap=롯데몰, 김포공항 정류장 하차 > 횡단보도 건너기 > 롯데백화점 좌측 도보 200미터 이동 > 롯데시네마 김포공항 입구, SubWayMap=<strong class="tit">[롯데몰 김포공항점 영업시간 내]</strong>: 오전 10시 30분 ~ 오후 10시
+김포공항역 하차 > 3번 출구(롯데몰, 호텔)로 이동 > 롯데몰 진입(GF층) > 좌측 유니클로 매장 옆으로 300미터 도보 > T.G.I 프라이데이 우축 엘리베이터로 1층 이동 > 롯데시네마 입구
+<strong class="tit">[롯데몰 김포공항점 영업시간 외]</strong>: 오후 10시 ~ 익일 오전 10시 30분
+김포공항역 하차 > 3번 출구(롯데몰, 호텔)로 이동 > 횡당보도 건너기 > 좌측 도보 200미터 이동 > 롯데시네마 입구, MyCarMap=<strong class="tit">[네비게이션 주소]</strong>: 서울특별시 강서구 하늘길 38, 롯데시네마 김포공항
+<strong class="tit">[주차 TIP] </strong>
+P1층 > G, H, J 15 ~ 19번 (옐로우 존)
+P2층 > G, H, J 25 ~ 29번 (오렌지 존)
+P3층 > G, H, J 35 ~ 38번 (옐로우 존)
+해당 위치 주차 시 롯데시네마 진입이 용이합니다. (전용 엘리베이터), ParkingInfo=<strong class="tit">[주차 할인]</strong>: 무인정산기 주차권 인증 시 영화 관람 당일 3시간 무료(초과 시 30분당 1, 000원   /   백화점&몰 구매 금액 합산 시 최대 12시간)
+<strong class="tit">[무인정산기 위치]</strong>: 롯데백화점 지상 1층, P1~ P3 전용 엘리베이터 로비
+<strong class="tit">[주차권 안내]</strong>-사전정산 시스템
+<모바일 티켓>: 바로티켓 상단 주차권 버튼 클릭 시 바코드 생성
+<지류 티켓>: 영화 티켓 하단 주차권 바코드 사용, TotalScreenCount=10, TotalSeatCount=2127, IsFavoriteCinema=, DivisionCode=1, DetailDivisionCode=0001, DetailDivisionNameKR=null, CinemaID=1009, CinemaNameKR=김포공항, CinemaNameUS=Gimpo Int'l Airport, CinemaName=null, SortSequence=0, Latitude=37.5637350, Longitude=126.8037590, Distance=0.0, SmartOrderYN=null, OpenDtYN=null, StageGreetingYN=null, CinemaAreaCode=null, CinemaAddrSummary=null, CinemaAreaName=null, CinemaAreaSort=0, Active=0, CinemaOprtDivCd=null}, IsOK=true, ResultMessage=SUCCESS, ResultCode=null, EventResultYn=null}
+롯데시네마 김포공항 1 1009 https: //www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&detailDivisionCode=1&cinemaID=1009
+{CinemaDetail={CinemaKeyVisual=, SpecialScreenDivisionCode=[400, 930], CinemaIntro=, Address=서울 노원구 동일로 1414 (상계동) 롯데백화점, BusMap=<백화점 영업></br>롯데백화점노원점 앞 하차_노원05, 노원02, 노원08</br>노원역 9번출구 하차_1129, 1138, 1142, 1154: 롯데백화점 방면 횡단보도 도보이동 > 본관 정문 또는 본관과 별관 사이 쉐이크쉑버거 우측 출입구 이용<br></br>
+<백화점 휴점 / 폐점>: <font color=red>백화점 본관 정문 가장 좌측 '시네마전용출입구' 이용, SubWayMap=<백화점 영업></br>4호선 노원역 하차 > 2번출구 > 노원역사거리방면 이동 > 본관 정문 또는 본관과 별관 사이 쉐이크쉑버거 우측 출입구 이용</br>7호선 노원역 하차 > 4번출구 옆 백화점 본관 B1F 식품관 연결출입구 이용<br></br>
+<백화점 휴점 / 폐점></br><font color=red>백화점 본관 정문 가장 좌측 '시네마전용출입구' 이용</br>4호선 노원역 하차 > 2번출구 > 노원역사거리방면 백화점 본관 정문</br>7호선 노원역 하차 > 4번출구 > 노원역사거리방면 백화점 본관 정문, MyCarMap=<네비게이션 검색>: '롯데시네마 노원' 서울특별시 노원구 동일로 1414 (롯데백화점 노원점 10층)<br></br>
+<백화점 영업 중 주차장 이용 방법><li>(1)본관(지하주차장 B2F~B3F), 별관(B2F~5F)</li><li>(2)주차가능대수 총 958대</li><li>(3)영화관 인접구역</li><li>&nbsp;&nbsp;&nbsp<font color=gray>본관-B2F 205구역, B3F 305구역 / 별관-3F 302구역</li><li><font color=black>(4)영화관 오시는 길</li><li>&nbsp;&nbsp;&nbsp<font color=gray>본관-인접구역 엘리베이터 이용  / 별관- 3F 연결통로(301, 302구역 사이) 이동 > 엘리베이터, 에스컬레이터 이용</li><br>
+<font color=black><백화점 휴점 / 폐점 시 주차장 이용 방법><li>(1)별관 B2F~5F (본관 미개방)</li><li>(2)영화관 인접구역-각 층 02 구역</li><li>(3)영화관 오시는 길</li><li>&nbsp;&nbsp;&nbsp<font color=gray>별관 1F 입구 정면 횡단보도 도보이동(약3분) > <font color=red>백화점 본관 정문(노원역사거리방면) 가장 좌측 '시네마전용입구' 이용</li>, ParkingInfo=<평일>: 당일 영화관람 시 3시간 무료<br>이후 10분당 1, 000원<br></br>
+<주말·공휴일>: <font color=red>유료주차, 매점 주차등록 필수<br>티켓+매점 1만원 이상 구매 ▷ 1시간 무료<br>티켓+매점 5만원 이상 구매 ▷ 2시간 무료<br>단, 11시 이전 출차 / 20시 이후 입차 경우 3시간 무료주차 (평일 동일)<br></br>
+<주차권안내>: 모바일티켓-바로티켓 우상단 주차권 클릭 시 바코드 생성<br>지류티켓-영화티켓 하단 주차권 바코드 사용<br></br>
+<주차정산>:주차장 층 엘리베이터 옆 주차정산기 이용, TotalScreenCount=10, TotalSeatCount=1855, IsFavoriteCinema=, DivisionCode=1, DetailDivisionCode=0001, DetailDivisionNameKR=null, CinemaID=1003, CinemaNameKR=노원, CinemaNameUS=Nowon, CinemaName=null, SortSequence=0, Latitude=37.6551568707704, Longitude=127.061098089374, Distance=0.0, SmartOrderYN=null, OpenDtYN=null, StageGreetingYN=null, CinemaAreaCode=null, CinemaAddrSummary=null, CinemaAreaName=null, CinemaAreaSort=0, Active=0, CinemaOprtDivCd=null}, IsOK=true, ResultMessage=SUCCESS, ResultCode=null, EventResultYn=null}
+롯데시네마 노원 1 1003 https: //www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&detailDivisionCode=1&cinemaID=1003
+{CinemaDetail={CinemaKeyVisual=, SpecialScreenDivisionCode=[200, 987], CinemaIntro=, Address=서울 강남구 남부순환로 2753, BusMap=일반버스: 11-3, 917
+간선버스: 402, 406, N37
+지선버스: 3012, 4319, 4435
+공항버스 6009번 이용 시 '매봉삼성아파트SK리더스뷰' 하차 후 양재역 방면 150m 직진 후 우측 건물 B2층
+안내되어 있는 버스의 노선 변경 등에 따라 오시는길이 변경될 수 있습니다.
+출발 전 버스노선을 반드시 확인해주세요., SubWayMap=지하철 3호선 매봉역 하차 후 2번 출구에서 도곡역 방향 50m 직진 후 좌측 건물 B2층, MyCarMap=<font color=red>주차공간이 협소하므로 대중교통 이용 부탁드립니다.
+[네비게이션주소] : 서울시 강남구 남부순환로 2753(도곡동), ParkingInfo=[주차요금안내] 영화관람 당일 3시간 5천원: 초과 시 10분당 1,000원 / 건물 내 타 매장과 합산 불가
+[주차권안내] : 모바일 티켓은 스마트티켓/바로티켓 상단 주차권 버튼 클릭 시 바코드 생성 후 사용, 지류티켓은 영화 티켓 하단 주차정산 안내 바코드 사용
+[주차정산] 무인정산기 활용 사전 정산: 지상 1층 주차장 입구, 현금결제는 출차 시 주차정산소 이용, TotalScreenCount=7, TotalSeatCount=847, IsFavoriteCinema=, DivisionCode=1, DetailDivisionCode=0001, DetailDivisionNameKR=null, CinemaID=1023, CinemaNameKR=도곡, CinemaNameUS=Dogok, CinemaName=null, SortSequence=0, Latitude=37.487453, Longitude=127.047102, Distance=0.0, SmartOrderYN=null, OpenDtYN=null, StageGreetingYN=null, CinemaAreaCode=null, CinemaAddrSummary=null, CinemaAreaName=null, CinemaAreaSort=0, Active=0, CinemaOprtDivCd=null}, IsOK=true, ResultMessage=SUCCESS, ResultCode=null, EventResultYn=null}
+롯데시네마 도곡 1 1023 https: //www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&detailDivisionCode=1&cinemaID=1023
+{
+CinemaDetail={CinemaKeyVisual=, SpecialScreenDivisionCode=[], CinemaIntro=, Address=서울 금천구 시흥대로 399 (독산동), BusMap=[금천 우체국 정류장 하차]
+간선버스: 150, 500, 505, 652
+지선버스 : 5530, 5531, 5537, 5617, 5618, 5621, 5623, 5625, 5626, 5627, 5630, 5634, 5713, 6635
+직행버스: 5609
+일반버스: 1, 5, 9, 9-3, 51, 388, 900, 5602
+마을버스:금천08
+[홈플러스 금천점 정류장 하차]
+지선버스: 5535, 5537, 5627, 5630, SubWayMap=1호선 독산역: 1번 출구 (전방 횡단보도 이용 > 도보 직진 700미터 > 말미사거리에서 좌측으로 도보 300미터 직진> 시티렉스 건물 6층)
+2호선 구로디지털단지역: 1번 출구 (안양방면 버스 이용 5분 거리), MyCarMap=서울특별시 금천구 시흥대로 399 시티렉스 6층 롯데시네마 독산 : 네비게이션 이용 시 통합검색 "시티렉스" 이용, ParkingInfo=당일 관람 티켓 제시시 3시간 무료 (초과시 10분당 500원)
+<font color=red>주차공간이 매우 협소하므로 가급적 대중교통을 이용해주시기 바랍니다., TotalScreenCount=8, TotalSeatCount=1606, IsFavoriteCinema=, DivisionCode=1, DetailDivisionCode=0001, DetailDivisionNameKR=null, CinemaID=1017, CinemaNameKR=독산, CinemaNameUS=Doksan, CinemaName=null, SortSequence=0, Latitude=37.4694106, Longitude=126.8974623, Distance=0.0, SmartOrderYN=null, OpenDtYN=null, StageGreetingYN=null, CinemaAreaCode=null, CinemaAddrSummary=null, CinemaAreaName=null, CinemaAreaSort=0, Active=0, CinemaOprtDivCd=null}, IsOK=true, ResultMessage=SUCCESS, ResultCode=null, EventResultYn=null
+}

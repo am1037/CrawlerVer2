@@ -53,17 +53,17 @@ public class CrawlLogics {
             return "fromDate and untilDate is required";
         }
 
-        List<Theater> targetTheaterList;
+        List<TheaterVO> targetTheaterListVO;
         if(region != null){
-            targetTheaterList = sm.selectByRegion(region);
+            targetTheaterListVO = sm.selectByRegion(region);
         }else{
-            targetTheaterList = new ArrayList<>();
-            targetTheaterList.add(tm.getTheaterById("CGV", theater_Id));
+            targetTheaterListVO = new ArrayList<>();
+            targetTheaterListVO.add(tm.getTheaterById("CGV", theater_Id));
         }
 
         List<String> dateList = betweenTwoDate(fromDate, untilDate);
 
-        for(Theater t : targetTheaterList){
+        for(TheaterVO t : targetTheaterListVO){
             for(String date : dateList){
                 doorToMongoDB.insertOne(crawl(t.getTheater_id(), date));
             }
@@ -75,9 +75,9 @@ public class CrawlLogics {
     @RequestMapping("/crawlEverywhere")
     public String crawlOneday(@RequestParam(required = false) String date) {
 
-        List<Theater> targetTheaterList = tm.selectAllByCompanyName("CGV");
+        List<TheaterVO> targetTheaterListVO = tm.selectAllByCompanyName("CGV");
 
-        for (Theater t : targetTheaterList) {
+        for (TheaterVO t : targetTheaterListVO) {
             crawl(t.getTheater_id(), date);
         }
         //crawl(targetTheaterList, date);
