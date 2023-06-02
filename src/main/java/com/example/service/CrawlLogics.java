@@ -2,8 +2,8 @@ package com.example.service;
 
 import com.example.crawler.cgv.CrawlerCGV;
 import com.example.crawler.cgv.elements.ColTime;
-import com.example.crawler.cgv.elements.CrawlResult;
-import com.example.crawler.cgv.elements.MovieDetailCrawlResult;
+import com.example.crawler.cgv.elements.CgvCrawlResult;
+import com.example.crawler.cgv.elements.CgvMovieDetailCrawlResult;
 import com.example.database.external.kmdb.KmdbAPI;
 import com.example.database.external.kmdb.KmdbMovieSimpleInfoResponseVO;
 import com.example.database.mongoDB.DoorToMongoDB;
@@ -97,7 +97,7 @@ public class CrawlLogics {
          */
         Map<String, MovieMapping> mmMap  = mmm.getAllMappingsIdIsNull();
         mmMap.forEach((x, y)->{
-            MovieDetailCrawlResult infoFromMongoDB = doorToMongoDB.selectOneByUrl(x);
+            CgvMovieDetailCrawlResult infoFromMongoDB = doorToMongoDB.selectOneByUrl(x);
             KmdbMovieSimpleInfoResponseVO infoFromKmdb = kmdbAPI.getMovieInfoByTitle(infoFromMongoDB.getTitle());
             List<KmdbMovieSimpleInfoResponseVO.Collection.Movie> movieList = infoFromKmdb.getMovies(0);
             if(movieList == null){
@@ -177,13 +177,13 @@ public class CrawlLogics {
         return returnStr;
     }
 
-    public CrawlResult crawl(@RequestParam String theaterId,
-                             @RequestParam String date) {
+    public CgvCrawlResult crawl(@RequestParam String theaterId,
+                                @RequestParam String date) {
         System.out.println("Crawling Start... " + theaterId + " " + date);
         System.out.println("Crawling Start... " + theaterId + " : " + theaterCode("CGV", theaterId));
         List<ColTime> colTimeList;
         try {
-            CrawlResult cr = cgv.crawl(theaterId, date);
+            CgvCrawlResult cr = cgv.crawl(theaterId, date);
             colTimeList = cr.getColTimes();
 
             colTimeList.forEach(ct -> {
@@ -203,7 +203,7 @@ public class CrawlLogics {
                 if(!isExistMongo(ct.getUrl())) { //존재하지 않을 경우
                     //cgv에서 크롤해서 채워넣는다
                     System.out.println("Crawling Movie Detail... " + ct.getUrl());
-                    MovieDetailCrawlResult result = cgv.crawlMovie(ct.getUrl());
+                    CgvMovieDetailCrawlResult result = cgv.crawlMovie(ct.getUrl());
                     doorToMongoDB.insertOne(result);
                 }
             });
@@ -219,7 +219,7 @@ public class CrawlLogics {
                 return cr;
             } catch (Exception e) {
                 e.printStackTrace();
-                cr = new CrawlResult();
+                cr = new CgvCrawlResult();
                 cr.setCompany("ERROR");
                 return cr;
             }

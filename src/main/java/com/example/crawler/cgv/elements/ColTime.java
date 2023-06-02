@@ -12,5 +12,5 @@ public class ColTime {
     String release_date;
     String url;
 
-    List<Screen> screens;
+    List<CgvScreen> screens;
 }

@@ -1,10 +1,9 @@
 package com.example.crawler.cgv;
 
-import com.example.crawler.CrawlerInterface;
 import com.example.crawler.cgv.elements.ColTime;
-import com.example.crawler.cgv.elements.MovieDetailCrawlResult;
-import com.example.crawler.cgv.elements.CrawlResult;
-import com.example.crawler.cgv.elements.Screen;
+import com.example.crawler.cgv.elements.CgvMovieDetailCrawlResult;
+import com.example.crawler.cgv.elements.CgvCrawlResult;
+import com.example.crawler.cgv.elements.CgvScreen;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -22,19 +21,17 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 @Component
-public class CrawlerCGV implements CrawlerInterface {
+public class CrawlerCGV {
     String url = "http://www.cgv.co.kr/theaters/?areacode=02"; //오리
     String str1 = "&theaterCode=";
     String str2 = "&date=";
 
-
-    @Override
-    public CrawlResult crawl(String theater, String date) {
+    public CgvCrawlResult crawl(String theater, String date) {
         String s1 = str1 + theater;
         String s2 = str2 + date;
         WebDriver driver = null;
 
-        CrawlResult crawlResult = new CrawlResult();
+        CgvCrawlResult crawlResult = new CgvCrawlResult();
         crawlResult.setCompany("CGV");
         crawlResult.setTheater_code(theater);
         crawlResult.setFile_targetDate(date);
@@ -79,7 +76,7 @@ public class CrawlerCGV implements CrawlerInterface {
 
                         List<WebElement> screenTimes = hall.findElement(By.className("info-timetable")).findElements(By.tagName("li"));
                         screenTimes.forEach(screenTime -> {
-                            Screen screen = new Screen();
+                            CgvScreen screen = new CgvScreen();
                             screen.setScreen_name(wes.get(1).getText());
                             screen.setScreen_seats(wes.get(2).getText());
                             WebElement a;
@@ -106,8 +103,7 @@ public class CrawlerCGV implements CrawlerInterface {
         return null;
     }
 
-    @Override
-    public MovieDetailCrawlResult crawlMovie(String url) {
+    public CgvMovieDetailCrawlResult crawlMovie(String url) {
         try {
             Document doc = Jsoup.connect(url).get();
             Element e1 = doc.getElementsByClass("wrap-movie-detail").get(0);
@@ -137,7 +133,7 @@ public class CrawlerCGV implements CrawlerInterface {
 
             String plot = doc.getElementsByClass("sect-story-movie").get(0).text();
 
-            MovieDetailCrawlResult movieDetailCrawlResult = new MovieDetailCrawlResult();
+            CgvMovieDetailCrawlResult movieDetailCrawlResult = new CgvMovieDetailCrawlResult();
             movieDetailCrawlResult.setUrl(url);
             movieDetailCrawlResult.setTitle(title1);
             movieDetailCrawlResult.setTitleOther(title2);
@@ -152,7 +148,7 @@ public class CrawlerCGV implements CrawlerInterface {
             return movieDetailCrawlResult;
         } catch (IOException e) {
             e.printStackTrace();
-            MovieDetailCrawlResult movieDetailCrawlResult = new MovieDetailCrawlResult();
+            CgvMovieDetailCrawlResult movieDetailCrawlResult = new CgvMovieDetailCrawlResult();
             movieDetailCrawlResult.setTitle("error");
             movieDetailCrawlResult.setTitleOther(e.getMessage());
             return movieDetailCrawlResult;

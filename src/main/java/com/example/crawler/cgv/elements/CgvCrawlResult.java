@@ -8,9 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-public class CrawlResult extends MyCrawlingResult {
+public class CgvCrawlResult extends MyCrawlingResult {
 
-    String company;
+    String company = "CGV";
     String theater_code;
     String file_targetDate;
     String file_createdDate;
@@ -19,15 +19,15 @@ public class CrawlResult extends MyCrawlingResult {
     public List<ScreenVO> toScreenVOs() {
         List<ScreenVO> screenVOs = new ArrayList<>();
         for (ColTime ct : colTimes) {
-            for (Screen s : ct.getScreens()) {
+            for (CgvScreen s : ct.getScreens()) {
                 ScreenVO screenVO = new ScreenVO();
                 screenVO.setTitle(ct.getMovie_title());
                 screenVO.setCompany(company);
-                screenVO.setScreen_name(s.screen_name);
+                screenVO.setScreen_name(s.getScreen_name());
                 screenVO.setRuntime(Integer.parseInt(ct.getRuntime()));
                 screenVO.setDetail_url(ct.getUrl());
-                screenVO.setTime(s.screen_startTime);
-                screenVO.setTime_end(s.screen_endTime);
+                screenVO.setTime(s.getScreen_startTime());
+                screenVO.setTime_end(s.getScreen_endTime());
                 screenVO.setDate(file_targetDate);
                 screenVO.setTheater_id(theater_code);
                 screenVOs.add(screenVO);

@@ -1,7 +1,6 @@
 package com.example.database.mySQL.mybatis;
 
 import org.apache.ibatis.annotations.*;
-
 import java.util.List;
 
 @Mapper

@@ -3,7 +3,7 @@ package com.example.crawler.cgv.elements;
 import lombok.Data;
 
 @Data
-public class Screen {
+public class CgvScreen {
 
     String screen_name;
     String screen_seats;

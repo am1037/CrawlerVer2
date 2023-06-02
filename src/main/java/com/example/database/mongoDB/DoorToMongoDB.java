@@ -1,7 +1,7 @@
 package com.example.database.mongoDB;
 
-import com.example.crawler.cgv.elements.CrawlResult;
-import com.example.crawler.cgv.elements.MovieDetailCrawlResult;
+import com.example.crawler.cgv.elements.CgvCrawlResult;
+import com.example.crawler.cgv.elements.CgvMovieDetailCrawlResult;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
@@ -20,7 +20,7 @@ public class DoorToMongoDB {
     String url = "mongodb://localhost:27017";
     String dbName = "popcorn";
 
-    public void insertOne(MovieDetailCrawlResult result) {
+    public void insertOne(CgvMovieDetailCrawlResult result) {
         try(MongoClient mongoClient = MongoClients.create(url)) {
             MongoDatabase db = mongoClient.getDatabase(dbName);
 
@@ -50,7 +50,7 @@ public class DoorToMongoDB {
         }
     }
 
-    public MovieDetailCrawlResult selectOneByUrl(String url){
+    public CgvMovieDetailCrawlResult selectOneByUrl(String url){
         try(MongoClient mongoClient = MongoClients.create(this.url)) {
             MongoDatabase db = mongoClient.getDatabase(dbName);
             MongoCollection<Document> collection = db.getCollection("movie_info");
@@ -59,7 +59,7 @@ public class DoorToMongoDB {
                                                   .first();
             ObjectMapper mapper = new ObjectMapper();
             if (doc != null) {
-                return mapper.readValue(doc.toJson(), MovieDetailCrawlResult.class);
+                return mapper.readValue(doc.toJson(), CgvMovieDetailCrawlResult.class);
             }
         }catch (Exception e){
             e.printStackTrace();
@@ -67,7 +67,7 @@ public class DoorToMongoDB {
         return null;
     }
 
-    public void insertOne(CrawlResult result){
+    public void insertOne(CgvCrawlResult result){
         Document document = Document.parse(result.toJsonString());
         try(MongoClient mongoClient = MongoClients.create(url)) {
             MongoDatabase db = mongoClient.getDatabase(dbName);
@@ -89,7 +89,7 @@ public class DoorToMongoDB {
         }
     }
 
-    public CrawlResult selectOneByTheaterAndDate(String theaterCode, String date){
+    public CgvCrawlResult selectOneByTheaterAndDate(String theaterCode, String date){
         try(MongoClient mongoClient = MongoClients.create(this.url)) {
             MongoDatabase db = mongoClient.getDatabase(dbName);
             MongoCollection<Document> collection = db.getCollection("crawl_result");
@@ -102,7 +102,7 @@ public class DoorToMongoDB {
 
             ObjectMapper mapper = new ObjectMapper();
             if (doc != null) {
-                return mapper.readValue(doc.toJson(), CrawlResult.class);
+                return mapper.readValue(doc.toJson(), CgvCrawlResult.class);
             }
         }catch (Exception e){
             e.printStackTrace();
