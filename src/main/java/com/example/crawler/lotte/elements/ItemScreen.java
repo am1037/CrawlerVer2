@@ -31,6 +31,7 @@ public class ItemScreen {
 
     @JsonProperty("PlayDt")
     String PlayDt; //yyyyMMdd
+    @JsonSetter("PlayDt")
     public void setPlayDt(String playDt) {
         //yyyy-mm-dd to yyyymmdd
         String[] split = playDt.split("-");

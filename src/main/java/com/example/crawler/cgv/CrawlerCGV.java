@@ -25,7 +25,7 @@ public class CrawlerCGV {
 
     public static void main(String[] args) {
         CrawlerCGV crawlerCGV = new CrawlerCGV();
-        System.out.println(crawlerCGV.crawlMovie("http://www.cgv.co.kr/movies/detail-view/?midx=87034"));
+        System.out.println(crawlerCGV.crawlMovie("http://www.cgv.co.kr/movies/detail-view/?midx=87063"));
     }
 
     String url = "http://www.cgv.co.kr/theaters/?areacode=02"; //오리

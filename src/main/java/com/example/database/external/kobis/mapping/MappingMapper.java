@@ -1,5 +1,6 @@
 package com.example.database.external.kobis.mapping;
 
+import com.example.crawler.lotte.CrawlerLotte;
 import com.example.database.external.kobis.KobisAPI;
 import com.example.database.external.kobis.elements.KobisMovieInfoResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,19 @@ public class MappingMapper {
 
     @Autowired
     KobisAPI kobisAPI;
+
+    public static void main(String[] args) {
+        CrawlerLotte crawlerLotte = new CrawlerLotte();
+        KobisAPI kobisAPI = new KobisAPI();
+        MappingMapper mappingMapper = new MappingMapper();
+
+        MappingObject mo = new MappingObject(crawlerLotte.crawlMovie("https://www.lottecinema.co.kr/NLCHS/Movie/MovieDetailView?movie=19885"));
+        try {
+            System.out.println(mappingMapper.whichOne(mo, kobisAPI.byMovieNm(mo.getTitle())));
+        }catch (Exception e) {
+            System.out.println("ERROR");
+        }
+    }
 
     public String whichOne(MappingObject mo, List<KobisMovieInfoResponse> responses){
         if(responses.size()==1){

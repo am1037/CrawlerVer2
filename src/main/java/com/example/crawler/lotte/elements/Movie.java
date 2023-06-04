@@ -2,6 +2,7 @@ package com.example.crawler.lotte.elements;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonSetter;
 import lombok.Data;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -31,4 +32,14 @@ public class Movie {
 
     @JsonProperty("ViewGradeCode")
     String grade;
+    @JsonSetter("ViewGradeCode")
+    public void setGrade(String age) {
+        System.out.println(age);
+        //left only numbers
+        this.grade = age.replaceAll("[^0-9]", "");
+        if(this.grade.equals("")){
+            if(age.contains("청소년")) this.grade = "18";
+            else this.grade = "0";
+        }
+    }
 }

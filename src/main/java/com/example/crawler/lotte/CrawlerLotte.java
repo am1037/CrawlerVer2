@@ -15,11 +15,11 @@ public class CrawlerLotte {
 
     public static void main(String[] args) {
         CrawlerLotte crawlerLotte = new CrawlerLotte();
-        LotteCrawlResult result = crawlerLotte.crawl("1004", "20230604");
-        //LotteMovieDetailCrawlResult result = crawlerLotte.crawlMovie("19824");
-        System.out.println(result);
-        //System.out.println(result.getMovie().getTitle());
-        //System.out.println(result.getMovie().getGrade());
+        //LotteCrawlResult result = crawlerLotte.crawl("1004", "20230604");
+        LotteMovieDetailCrawlResult result = crawlerLotte.crawlMovie("https://www.lottecinema.co.kr/NLCHS/Movie/MovieDetailView?movie=19885");
+        //System.out.println(result);
+        System.out.println(result.getMovie().getTitle());
+        System.out.println(result.getMovie().getGrade());
     }
 
     public LotteCrawlResult crawl(String theater, String date) {

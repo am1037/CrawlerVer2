@@ -20,9 +20,10 @@ public class KobisAPI {
     KobisOpenAPIRestService kobis = new KobisOpenAPIRestService(kobis_KEY);
     public static void main(String[] args) throws Exception{
         KobisAPI kobisAPI = new KobisAPI();
-        kobisAPI.byMovieNm("스타워즈").forEach(x -> {
+        kobisAPI.byMovieNm("스크림").forEach(x -> {
             System.out.println(x);
         });
+        System.out.println(kobisAPI.byMovieCd("20231843"));
     }
 
     public List<KobisMovieInfoResponse> byMovieNm(String str) throws Exception{
@@ -43,6 +44,16 @@ public class KobisAPI {
         }
 
         return resultList;
+    }
+
+    public KobisMovieInfoResponse byMovieCd(String str) throws Exception{
+        //replace all special characters including ' ' from str
+        Map<String, String> m4r = new HashMap<>();
+        ObjectMapper om = new ObjectMapper();
+
+        m4r.put("movieCd", str);
+
+        return om.readValue(kobis.getMovieInfo(true, m4r), KobisMovieInfoResponse.class);
     }
 
 }
