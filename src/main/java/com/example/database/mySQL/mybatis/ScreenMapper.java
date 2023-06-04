@@ -36,4 +36,7 @@ public interface ScreenMapper {
 
     @Update("UPDATE popcorn.movie_screen SET movie_docid = #{movie_docid} WHERE detail_url = #{detail_url}")
     int updateDocid(@Param("movie_docid") String movie_docid, @Param("detail_url") String detail_url);
+
+    //update popcorn.movie_screen set movie_docid = substring(detail_url, -5)
+    //temporary sql until kmdb is restored
 }

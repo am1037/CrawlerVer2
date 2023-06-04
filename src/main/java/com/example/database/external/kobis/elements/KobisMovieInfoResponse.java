@@ -1,5 +1,4 @@
-package com.example.crawler.lotte.elements;
-
+package com.example.database.external.kobis.elements;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -9,9 +8,9 @@ import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
-public class Casting{
+public class KobisMovieInfoResponse {
 
-    @JsonProperty("Items")
-    List<ItemActor> itemActors;
+    @JsonProperty("movieInfoResult")
+    KobisMovieInfoResult kobisMovieInfoResult;
 
 }

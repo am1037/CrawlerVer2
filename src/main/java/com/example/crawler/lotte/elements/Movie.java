@@ -14,7 +14,7 @@ public class Movie {
     String titleOther;
 
     @JsonProperty("PlayTime")
-    String runtime;
+    Integer runtime;
 
     @JsonProperty("MakingNationNameKR")
     String nations;
@@ -28,4 +28,7 @@ public class Movie {
 
     @JsonProperty("SynopsisKR")
     String story;
+
+    @JsonProperty("ViewGradeCode")
+    String grade;
 }

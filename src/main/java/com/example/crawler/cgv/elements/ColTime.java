@@ -8,7 +8,7 @@ import java.util.List;
 public class ColTime {
     String movie_title;
     List<String> movie_genres;
-    String runtime;
+    Integer runtime;
     String release_date;
     String url;
 

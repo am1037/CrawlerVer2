@@ -24,7 +24,7 @@ public interface MovieMappingMapper {
     @Select("SELECT * FROM popcorn.movie_mapping WHERE detail_url = #{detail_url}")
     MovieMapping getMappingByUrl(@Param("detail_url") String detail_url);
 
-    @Insert("INSERT INTO popcorn.movie_mapping (company, detail_url, my_id, my_title) VALUES (#{company}, #{detail_url}, #{my_id}, #{my_title)")
+    @Insert("INSERT INTO popcorn.movie_mapping (company, detail_url, my_id, my_title) VALUES (#{company}, #{detail_url}, #{my_id}, #{my_title})")
     int insertUrl(MovieMapping url);
 
     @Update("UPDATE popcorn.movie_mapping SET docid = #{docid}, kmdb_url = #{kmdb_url}, posters = #{posters} WHERE detail_url = #{detail_url}")

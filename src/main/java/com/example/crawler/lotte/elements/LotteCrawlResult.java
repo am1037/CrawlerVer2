@@ -1,12 +1,9 @@
 package com.example.crawler.lotte.elements;
 
 import com.example.crawler.MyCrawlingResult;
-import com.example.crawler.cgv.elements.CgvScreen;
-import com.example.crawler.cgv.elements.ColTime;
 import com.example.database.mySQL.mybatis.ScreenVO;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -50,7 +47,7 @@ public class LotteCrawlResult extends MyCrawlingResult {
     public List<ScreenVO> toScreenVOs(Map<String, String> map) {
         //map : movieCode NNNNN, runtime NNN
         List<ScreenVO> screenVOs = new ArrayList<>();
-        for (Item i : playSeqs.getItems()) {
+        for (ItemScreen i : playSeqs.getItemScreens()) {
                 ScreenVO screenVO = new ScreenVO();
                 screenVO.setTitle(i.getCinemaNameKR());
                 screenVO.setCompany(company);

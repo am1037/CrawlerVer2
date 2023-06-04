@@ -24,7 +24,7 @@ public class CgvCrawlResult extends MyCrawlingResult {
                 screenVO.setTitle(ct.getMovie_title());
                 screenVO.setCompany(company);
                 screenVO.setScreen_name(s.getScreen_name());
-                screenVO.setRuntime(Integer.parseInt(ct.getRuntime()));
+                screenVO.setRuntime(ct.getRuntime());
                 screenVO.setDetail_url(ct.getUrl());
                 screenVO.setTime(s.getScreen_startTime());
                 screenVO.setTime_end(s.getScreen_endTime());

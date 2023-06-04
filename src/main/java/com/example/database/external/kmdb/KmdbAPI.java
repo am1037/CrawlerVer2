@@ -35,7 +35,8 @@ public class KmdbAPI {
         String title = "캐리 러브 콘서트";
 
         try {
-            String encodedTitle = URLEncoder.encode(title, StandardCharsets.UTF_8.toString());
+            String encodedTitle = URLEncoder.encode(title, StandardCharsets.UTF_8);
+            System.out.println(str+key+"&title="+encodedTitle);
             HttpURLConnection connection = (HttpURLConnection) new URL(str+key+"&title="+encodedTitle).openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Content-Type", "application/json");

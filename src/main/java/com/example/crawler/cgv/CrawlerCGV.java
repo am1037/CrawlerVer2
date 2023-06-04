@@ -22,6 +22,12 @@ import java.util.concurrent.TimeUnit;
 
 @Component
 public class CrawlerCGV {
+
+    public static void main(String[] args) {
+        CrawlerCGV crawlerCGV = new CrawlerCGV();
+        System.out.println(crawlerCGV.crawlMovie("http://www.cgv.co.kr/movies/detail-view/?midx=87034"));
+    }
+
     String url = "http://www.cgv.co.kr/theaters/?areacode=02"; //오리
     String str1 = "&theaterCode=";
     String str2 = "&date=";
@@ -61,7 +67,7 @@ public class CrawlerCGV {
 
                 ColTime colTime = new ColTime();
                 colTime.setMovie_title(movieTitle);
-                colTime.setRuntime(runtime);
+                colTime.setRuntime(Integer.parseInt(runtime));
                 colTime.setUrl(movieURL);
                 colTime.setMovie_genres(Arrays.asList(genres.split(", ")));
                 colTime.setRelease_date(releaseDate);

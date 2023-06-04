@@ -1,89 +1,142 @@
 {
-  CinemaDetail={
-  CinemaKeyVisual=,
-  SpecialScreenDivisionCode=[
-  930
-], CinemaIntro=, Address=서울 금천구 디지털로10길 9 (가산동), BusMap=[지선] 5536, 5616, 5712, 5714
-[간선] 503, 504, 571, 652
-·구로방면: 금천 패션아울렛 사거리 [W몰] 하차하여 현대아울렛까지 도보 2분 이동
-·가산디지털 방면: 금천 패션아울렛 사거리 [마리오 아울렛] 하차하여 현대아울렛까지 도보 2분 이동
-안내되어있는 버스 노선 변경 등에 따라 오시는 길이 변경될 수 있습니다.출발 전 버스 노선을 반드시 확인해주세요., SubWayMap=[1호선 가산디지털단지역 하차]: 1번 출구 앞 시내 버스 정류장에서 5616, 5712 이용하여 [W몰] 정류장 하차 후 현대아울렛까지 도보 2분 이동 / 4번 출구에서 도보 600M 이동
-[건물 영업시간 외 이용방법]: 도보 이동 시 현대아울렛 옆 우리은행 건물에서 우회전하여 춘천옥 맞은편 출입구 이용 / 자차 이동 시 현대아울렛 주차장 이용(상시 개방), MyCarMap=네비게이션 이용 시: 서울시 금천구 디지털로 10길 9, 현대아울렛
-남부순환도로 공항 방면으로 시흥IC를 500M 지나, 디지털단지 오거리를 건넌 후, 고가 아래에서 U턴 → 가산로를 따라 100M 이동 후, 지웰에스테이트 골목으로 우회전 → 현대아울렛 후문에서 좌회전
-가산디지털 쇼핑몰 지하 2F~5F / 총 902대, ParkingInfo=티켓 제시시 3시간 무료주차/ 추가 10분당 500원, TotalScreenCount=6, TotalSeatCount=1054, IsFavoriteCinema=, DivisionCode=1, DetailDivisionCode=0001, DetailDivisionNameKR=null, CinemaID=1013, CinemaNameKR=가산디지털, CinemaNameUS=Gasan Digital, CinemaName=null, SortSequence=0, Latitude=37.4775952, Longitude=126.8890717, Distance=0.0, SmartOrderYN=null, OpenDtYN=null, StageGreetingYN=null, CinemaAreaCode=null, CinemaAddrSummary=null, CinemaAreaName=null, CinemaAreaSort=0, Active=0, CinemaOprtDivCd=null}, IsOK=true, ResultMessage=SUCCESS, ResultCode=null, EventResultYn=null}
-롯데시네마 가산디지털 1 1013 https://www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&detailDivisionCode=1&cinemaID=1013
-{
-CinemaDetail={
-CinemaKeyVisual=, SpecialScreenDivisionCode=[], CinemaIntro=, Address=서울 강서구 양천로 476 (등촌동) 4층, BusMap=652, 672, 6632 이용 시 가양역 정류장에서 하차
-673, 6627, 6642, 6645, 6715, 8000, 마을버스 강서 04, 05 이용 시 마포 중고등학교정류소에서 하차 후 가양역 9번출구 방면, SubWayMap=9호선 가양역: 9번 출구 (도보 직진 50미터 > 좌측 건물 진입 > 엘리베이터 이용 5층), MyCarMap=화곡 및 신월 방면에서 오실 경우 : 가양역 사거리에서 좌회전 후 유턴, 금부타워 주차장으로 진입
-마곡 및 방화 방면에서 오실 경우: 양천향교역을 지나 1km 직진 후 우측 금부타워 주차장으로 진입
-상암방면에서 오실 경우: 가양대교를 건너 가양역 사거리에서 직진하여 가양역 8번 출구 오른쪽 골목길로 우회전, P턴하여 금부타워 주차장으로 진입, ParkingInfo=ㆍ영화관람 시, 4층 매점에서 차량번호 등록 필수 (입차시간부터 최대 3시간 무료주차 /추가 10분당 1, 000원 부과)
-ㆍ주차등록을 하지 않고 요금을 지불하시는 경우 환불이 불가합니다.
-ㆍ주차장이 협소 하오니 가급적 대중교통을 이용을 부탁드립니다., TotalScreenCount=6, TotalSeatCount=444, IsFavoriteCinema=, DivisionCode=1, DetailDivisionCode=0001, DetailDivisionNameKR=null, CinemaID=9094, CinemaNameKR=가양, CinemaNameUS=Gayang, CinemaName=null, SortSequence=0, Latitude=37.5615798, Longitude=126.8532847, Distance=0.0, SmartOrderYN=null, OpenDtYN=null, StageGreetingYN=null, CinemaAreaCode=null, CinemaAddrSummary=null, CinemaAreaName=null, CinemaAreaSort=0, Active=0, CinemaOprtDivCd=null}, IsOK=true, ResultMessage=SUCCESS, ResultCode=null, EventResultYn=null}
-롯데시네마 가양 1 9094 https: //www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&detailDivisionCode=1&cinemaID=9094
-{CinemaDetail={CinemaKeyVisual=, SpecialScreenDivisionCode=[], CinemaIntro=, Address=서울 강동구 성내동, 44-1, BusMap=간선버스 (B): 130번, 300번, 361번, 370번
-지선버스 (G): 3211번, 3212번, 3214번, 3311번,3411번, 3412번, 3413번, 4213번
-광역버스 (R): 9301번, 606번, SubWayMap=지하철 5호선 천호역 6번 출구: 지하철 5호선 천호역에서 하차하신 후 6번출구로 나오셔서 길동사거리 방면(출구 방향)으로 직진, 국민은행 오른쪽 골목으로 약 50미터 들어오시면 우측에 위치하고 있습니다., MyCarMap=서울특별시 강동구 천호옛길 85 (성내동), ParkingInfo=평일, 주말, 공휴일 모두 3시간에 3, 000원이 부과되며, 3시간 이후부터는 10분에 500원이 추가로 부과
-주말에는 항상 만차가 되오니 가급적이면 대중교통 이용 부탁드립니다.
-영화관 만차 시 인근 주차장을 별도로 이용하셔야하며, 주차요금 할인은 받으실 수 없습니다.
-출차 시 극장표를 반드시 지참하시기 바랍니다., TotalScreenCount=10, TotalSeatCount=1742, IsFavoriteCinema=, DivisionCode=1, DetailDivisionCode=0001, DetailDivisionNameKR=null, CinemaID=9010, CinemaNameKR=강동, CinemaNameUS=Kangdong, CinemaName=null, SortSequence=0, Latitude=37.5366275939741, Longitude=127.125337325468, Distance=0.0, SmartOrderYN=null, OpenDtYN=null, StageGreetingYN=null, CinemaAreaCode=null, CinemaAddrSummary=null, CinemaAreaName=null, CinemaAreaSort=0, Active=0, CinemaOprtDivCd=null}, IsOK=true, ResultMessage=SUCCESS, ResultCode=null, EventResultYn=null
-}
-롯데시네마 강동 1 9010 https: //www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&detailDivisionCode=1&cinemaID=9010
-{CinemaDetail={CinemaKeyVisual=, SpecialScreenDivisionCode=[300, 980], CinemaIntro=, Address=서울 광진구 아차산로 262 (자양동, 더샵스타시티), BusMap=건대역(건대입구 방면) _ 240, 721, 2222, 2224, 350, 광진05: 건대입구역 사거리 방면 직진 후 사거리에서 롯데백화점 우측으로 200m 직진(이마트 방향) >첫번째 횡단보도 지난 후 우측 스타시티 쇼핑몰(이마트)  GATE 1 진입 > 좌측으로 5m 이동 후 엘리베이터 이용(2층)  > 우측 홀 이동<br></br>
-건대역(대동아파트앞 방면) _ 240, 721, 2222, 2224, 3500, 광진05: 건대입구역 사거리 방면 직진 후 횡단보도 이용 롯데백화점 방면 이동 후 백화점 좌측으로 200m 직진(이마트 방향) >첫번째 횡단보도 지난 후 우측 스타시티 쇼핑몰(이마트)  GATE 1 진입 > 좌측으로 5m 이동 후 엘리베이터 이용(2층)  > 우측 홀 이동<br></br>
-건대입구역 사거리.건대병원(어린이대공원역, 화양천주교교회 방면) _2016, 3217, 3220, 4212: 건대입구역 사거리 방면 직진 후 횡단보도 이용 롯데백화점 방면 이동 후 백화점 좌측으로 200m 직진 (이마트 방향) >첫번째 횡단보도 지난 후 우측 스타시티 쇼핑몰(이마트)  GATE 1 진입 > 좌측으로 5m 이동 후 엘리베이터 이용(2층)   > 우측 홀 이동<br></br>
-건대입구역 사거리.건대병원(건대역 방면) _240, 721, 2016, 3217, 3220, 4212, 102, 3500: 건대입구역 사거리 방면 직진 후 횡단보도 이용 롯데백화점 방면 이동 후 백화점 좌측으로 200m 직진 (이마트 방향) >첫번째 횡단보도 지난 후 우측 스타시티 쇼핑몰(이마트)  GATE 1 진입 > 좌측으로 5m 이동 후 엘리베이터 이용(2층)  > 우측 홀 이동<br></br>, SubWayMap=2호선 건대입구역 하차: 건대입구역 5번 출구 방향 이동 > 정면 횡단보도 이용 후 200m 직진 > 첫번째 횡단보도 지난 후 우측 스타시티 쇼핑몰(이마트)  GATE 1 진입 > 좌측으로 5m 이동 후 엘리베이터 이용(2층)  > 우측 홀 이동<br></br>
-7호선 건대입구역 하차 : 건대입구역 4번 출구 방향 좌측 롯데백화점 연결 통로(B1층)  이용하여 스타시티 쇼핑몰 진입 >정면 에스컬레이터 이용 2층 이동>우측 Emoi 쌀국수 앞 구름다리 이용 롯데시네마 진입<br></br>, MyCarMap=[내비게이션 검색] <font color=red><b>롯데시네마 건대입구</b><br><font color=gray>서울특별시 광진구 아차산로 272 (광진구 자양동 227-7): 스타시티 쇼핑몰(이마트) 지상 2층 위치<br></br>
-<b>[주차장 이용방법]</b><br><font color=gray>(1)지하 주차장(건물 지하 2층 ~ 지하 3층)<br><font color=gray>(2)주차 대수 (총 1, 058대)<br>(3)영화관 인접구역 <br><font color=red>&nbsp;&nbsp;&nbsp;지하 2층  C구역 / 지하 3층 G구역<br><font color=gray>(4)영화관 오시는 길 <br>&nbsp;&nbsp;&nbsp;주차 후 영화관 인접구역 엘리베이터 탑승<br>&nbsp;&nbsp;&nbsp;&nbsp; >&nbsp;지상 2층 하차 후 우측 롯데시네마 홀 이동<br></br>, ParkingInfo=<font color=red>영화 관람 당일 3시간 무료 (기본 30분 무료 포함): 초과 시 10분당 1, 000원 / 쇼핑몰 구매금액 합산 가능 (최대 5시간 무료)<br></br>
-[주차권 안내]<font color=gray><br>(1)모바일티켓 _ 바로티켓 우측 상단 주차권 버튼 클릭시 바코드 생성<br>(2)지류티켓 _ 영화티켓 하단 주차권 바코드 사용: 주차권 미출력시 스위트샵 방문<br></br>
-[주차 정산]<br><font color=gray>(1)출차시 출구쪽 유인 정산소 주차권 제시<br>(2)출차시 무인정산기 사전 정산(정산 후 20분내 미출차시 추가 요금 발생): 차량번호 입력 후 주차권 바코드 스캔<br></br>
-[무인 정산기 위치]<br><font color=gray>지하 2, 3층 엘리베이터 앞 </br>, TotalScreenCount=11, TotalSeatCount=2170, IsFavoriteCinema=, DivisionCode=1, DetailDivisionCode=0001, DetailDivisionNameKR=null, CinemaID=1004, CinemaNameKR=건대입구, CinemaNameUS=Konkuk Univ, CinemaName=null, SortSequence=0, Latitude=37.538553, Longitude=127.073184, Distance=0.0, SmartOrderYN=null, OpenDtYN=null, StageGreetingYN=null, CinemaAreaCode=null, CinemaAddrSummary=null, CinemaAreaName=null, CinemaAreaSort=0, Active=0, CinemaOprtDivCd=null}, IsOK=true, ResultMessage=SUCCESS, ResultCode=null, EventResultYn=null
-}
-롯데시네마 건대입구 1 1004 https: //www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&detailDivisionCode=1&cinemaID=1004
-{
-CinemaDetail={
-CinemaKeyVisual=, SpecialScreenDivisionCode=[300], CinemaIntro=, Address=서울 강서구 하늘길 지하 77 (방화동), BusMap=롯데몰, 김포공항 정류장 하차 > 횡단보도 건너기 > 롯데백화점 좌측 도보 200미터 이동 > 롯데시네마 김포공항 입구, SubWayMap=<strong class="tit">[롯데몰 김포공항점 영업시간 내]</strong>: 오전 10시 30분 ~ 오후 10시
-김포공항역 하차 > 3번 출구(롯데몰, 호텔)로 이동 > 롯데몰 진입(GF층) > 좌측 유니클로 매장 옆으로 300미터 도보 > T.G.I 프라이데이 우축 엘리베이터로 1층 이동 > 롯데시네마 입구
-<strong class="tit">[롯데몰 김포공항점 영업시간 외]</strong>: 오후 10시 ~ 익일 오전 10시 30분
-김포공항역 하차 > 3번 출구(롯데몰, 호텔)로 이동 > 횡당보도 건너기 > 좌측 도보 200미터 이동 > 롯데시네마 입구, MyCarMap=<strong class="tit">[네비게이션 주소]</strong>: 서울특별시 강서구 하늘길 38, 롯데시네마 김포공항
-<strong class="tit">[주차 TIP] </strong>
-P1층 > G, H, J 15 ~ 19번 (옐로우 존)
-P2층 > G, H, J 25 ~ 29번 (오렌지 존)
-P3층 > G, H, J 35 ~ 38번 (옐로우 존)
-해당 위치 주차 시 롯데시네마 진입이 용이합니다. (전용 엘리베이터), ParkingInfo=<strong class="tit">[주차 할인]</strong>: 무인정산기 주차권 인증 시 영화 관람 당일 3시간 무료(초과 시 30분당 1, 000원   /   백화점&몰 구매 금액 합산 시 최대 12시간)
-<strong class="tit">[무인정산기 위치]</strong>: 롯데백화점 지상 1층, P1~ P3 전용 엘리베이터 로비
-<strong class="tit">[주차권 안내]</strong>-사전정산 시스템
-<모바일 티켓>: 바로티켓 상단 주차권 버튼 클릭 시 바코드 생성
-<지류 티켓>: 영화 티켓 하단 주차권 바코드 사용, TotalScreenCount=10, TotalSeatCount=2127, IsFavoriteCinema=, DivisionCode=1, DetailDivisionCode=0001, DetailDivisionNameKR=null, CinemaID=1009, CinemaNameKR=김포공항, CinemaNameUS=Gimpo Int'l Airport, CinemaName=null, SortSequence=0, Latitude=37.5637350, Longitude=126.8037590, Distance=0.0, SmartOrderYN=null, OpenDtYN=null, StageGreetingYN=null, CinemaAreaCode=null, CinemaAddrSummary=null, CinemaAreaName=null, CinemaAreaSort=0, Active=0, CinemaOprtDivCd=null}, IsOK=true, ResultMessage=SUCCESS, ResultCode=null, EventResultYn=null}
-롯데시네마 김포공항 1 1009 https: //www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&detailDivisionCode=1&cinemaID=1009
-{CinemaDetail={CinemaKeyVisual=, SpecialScreenDivisionCode=[400, 930], CinemaIntro=, Address=서울 노원구 동일로 1414 (상계동) 롯데백화점, BusMap=<백화점 영업></br>롯데백화점노원점 앞 하차_노원05, 노원02, 노원08</br>노원역 9번출구 하차_1129, 1138, 1142, 1154: 롯데백화점 방면 횡단보도 도보이동 > 본관 정문 또는 본관과 별관 사이 쉐이크쉑버거 우측 출입구 이용<br></br>
-<백화점 휴점 / 폐점>: <font color=red>백화점 본관 정문 가장 좌측 '시네마전용출입구' 이용, SubWayMap=<백화점 영업></br>4호선 노원역 하차 > 2번출구 > 노원역사거리방면 이동 > 본관 정문 또는 본관과 별관 사이 쉐이크쉑버거 우측 출입구 이용</br>7호선 노원역 하차 > 4번출구 옆 백화점 본관 B1F 식품관 연결출입구 이용<br></br>
-<백화점 휴점 / 폐점></br><font color=red>백화점 본관 정문 가장 좌측 '시네마전용출입구' 이용</br>4호선 노원역 하차 > 2번출구 > 노원역사거리방면 백화점 본관 정문</br>7호선 노원역 하차 > 4번출구 > 노원역사거리방면 백화점 본관 정문, MyCarMap=<네비게이션 검색>: '롯데시네마 노원' 서울특별시 노원구 동일로 1414 (롯데백화점 노원점 10층)<br></br>
-<백화점 영업 중 주차장 이용 방법><li>(1)본관(지하주차장 B2F~B3F), 별관(B2F~5F)</li><li>(2)주차가능대수 총 958대</li><li>(3)영화관 인접구역</li><li>&nbsp;&nbsp;&nbsp<font color=gray>본관-B2F 205구역, B3F 305구역 / 별관-3F 302구역</li><li><font color=black>(4)영화관 오시는 길</li><li>&nbsp;&nbsp;&nbsp<font color=gray>본관-인접구역 엘리베이터 이용  / 별관- 3F 연결통로(301, 302구역 사이) 이동 > 엘리베이터, 에스컬레이터 이용</li><br>
-<font color=black><백화점 휴점 / 폐점 시 주차장 이용 방법><li>(1)별관 B2F~5F (본관 미개방)</li><li>(2)영화관 인접구역-각 층 02 구역</li><li>(3)영화관 오시는 길</li><li>&nbsp;&nbsp;&nbsp<font color=gray>별관 1F 입구 정면 횡단보도 도보이동(약3분) > <font color=red>백화점 본관 정문(노원역사거리방면) 가장 좌측 '시네마전용입구' 이용</li>, ParkingInfo=<평일>: 당일 영화관람 시 3시간 무료<br>이후 10분당 1, 000원<br></br>
-<주말·공휴일>: <font color=red>유료주차, 매점 주차등록 필수<br>티켓+매점 1만원 이상 구매 ▷ 1시간 무료<br>티켓+매점 5만원 이상 구매 ▷ 2시간 무료<br>단, 11시 이전 출차 / 20시 이후 입차 경우 3시간 무료주차 (평일 동일)<br></br>
-<주차권안내>: 모바일티켓-바로티켓 우상단 주차권 클릭 시 바코드 생성<br>지류티켓-영화티켓 하단 주차권 바코드 사용<br></br>
-<주차정산>:주차장 층 엘리베이터 옆 주차정산기 이용, TotalScreenCount=10, TotalSeatCount=1855, IsFavoriteCinema=, DivisionCode=1, DetailDivisionCode=0001, DetailDivisionNameKR=null, CinemaID=1003, CinemaNameKR=노원, CinemaNameUS=Nowon, CinemaName=null, SortSequence=0, Latitude=37.6551568707704, Longitude=127.061098089374, Distance=0.0, SmartOrderYN=null, OpenDtYN=null, StageGreetingYN=null, CinemaAreaCode=null, CinemaAddrSummary=null, CinemaAreaName=null, CinemaAreaSort=0, Active=0, CinemaOprtDivCd=null}, IsOK=true, ResultMessage=SUCCESS, ResultCode=null, EventResultYn=null}
-롯데시네마 노원 1 1003 https: //www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&detailDivisionCode=1&cinemaID=1003
-{CinemaDetail={CinemaKeyVisual=, SpecialScreenDivisionCode=[200, 987], CinemaIntro=, Address=서울 강남구 남부순환로 2753, BusMap=일반버스: 11-3, 917
-간선버스: 402, 406, N37
-지선버스: 3012, 4319, 4435
-공항버스 6009번 이용 시 '매봉삼성아파트SK리더스뷰' 하차 후 양재역 방면 150m 직진 후 우측 건물 B2층
-안내되어 있는 버스의 노선 변경 등에 따라 오시는길이 변경될 수 있습니다.
-출발 전 버스노선을 반드시 확인해주세요., SubWayMap=지하철 3호선 매봉역 하차 후 2번 출구에서 도곡역 방향 50m 직진 후 좌측 건물 B2층, MyCarMap=<font color=red>주차공간이 협소하므로 대중교통 이용 부탁드립니다.
-[네비게이션주소] : 서울시 강남구 남부순환로 2753(도곡동), ParkingInfo=[주차요금안내] 영화관람 당일 3시간 5천원: 초과 시 10분당 1,000원 / 건물 내 타 매장과 합산 불가
-[주차권안내] : 모바일 티켓은 스마트티켓/바로티켓 상단 주차권 버튼 클릭 시 바코드 생성 후 사용, 지류티켓은 영화 티켓 하단 주차정산 안내 바코드 사용
-[주차정산] 무인정산기 활용 사전 정산: 지상 1층 주차장 입구, 현금결제는 출차 시 주차정산소 이용, TotalScreenCount=7, TotalSeatCount=847, IsFavoriteCinema=, DivisionCode=1, DetailDivisionCode=0001, DetailDivisionNameKR=null, CinemaID=1023, CinemaNameKR=도곡, CinemaNameUS=Dogok, CinemaName=null, SortSequence=0, Latitude=37.487453, Longitude=127.047102, Distance=0.0, SmartOrderYN=null, OpenDtYN=null, StageGreetingYN=null, CinemaAreaCode=null, CinemaAddrSummary=null, CinemaAreaName=null, CinemaAreaSort=0, Active=0, CinemaOprtDivCd=null}, IsOK=true, ResultMessage=SUCCESS, ResultCode=null, EventResultYn=null}
-롯데시네마 도곡 1 1023 https: //www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&detailDivisionCode=1&cinemaID=1023
-{
-CinemaDetail={CinemaKeyVisual=, SpecialScreenDivisionCode=[], CinemaIntro=, Address=서울 금천구 시흥대로 399 (독산동), BusMap=[금천 우체국 정류장 하차]
-간선버스: 150, 500, 505, 652
-지선버스 : 5530, 5531, 5537, 5617, 5618, 5621, 5623, 5625, 5626, 5627, 5630, 5634, 5713, 6635
-직행버스: 5609
-일반버스: 1, 5, 9, 9-3, 51, 388, 900, 5602
-마을버스:금천08
-[홈플러스 금천점 정류장 하차]
-지선버스: 5535, 5537, 5627, 5630, SubWayMap=1호선 독산역: 1번 출구 (전방 횡단보도 이용 > 도보 직진 700미터 > 말미사거리에서 좌측으로 도보 300미터 직진> 시티렉스 건물 6층)
-2호선 구로디지털단지역: 1번 출구 (안양방면 버스 이용 5분 거리), MyCarMap=서울특별시 금천구 시흥대로 399 시티렉스 6층 롯데시네마 독산 : 네비게이션 이용 시 통합검색 "시티렉스" 이용, ParkingInfo=당일 관람 티켓 제시시 3시간 무료 (초과시 10분당 500원)
-<font color=red>주차공간이 매우 협소하므로 가급적 대중교통을 이용해주시기 바랍니다., TotalScreenCount=8, TotalSeatCount=1606, IsFavoriteCinema=, DivisionCode=1, DetailDivisionCode=0001, DetailDivisionNameKR=null, CinemaID=1017, CinemaNameKR=독산, CinemaNameUS=Doksan, CinemaName=null, SortSequence=0, Latitude=37.4694106, Longitude=126.8974623, Distance=0.0, SmartOrderYN=null, OpenDtYN=null, StageGreetingYN=null, CinemaAreaCode=null, CinemaAddrSummary=null, CinemaAreaName=null, CinemaAreaSort=0, Active=0, CinemaOprtDivCd=null}, IsOK=true, ResultMessage=SUCCESS, ResultCode=null, EventResultYn=null
+  19764=LotteMovieDetailCrawlResult(url=19764,
+  movie=Movie(title=포켓
+  몬스터
+  DP: 아르세우스
+  초극의
+  시공으로,
+  titleOther=포켓
+  몬스터
+  DP: 아르세우스
+  초극의
+  시공으로,
+  runtime=94,
+  nations=일본,
+  releaseDate=20230531,
+  story=미케나
+  마을에
+  도착한
+  지우와
+  피카츄.<br><br>갑자기
+  등장한
+  디아루가와
+  펄기아,
+  기라티나의
+  싸움으로<br>수천
+  년
+  전,
+  인간에게
+  배신당해
+  잠들었던
+  아르세우스가<br>분노와
+  함께
+  깨어난다!<br><br>복수를
+  위해
+  아르세우스는
+  미케나
+  마을을
+  공격하고,
+  <br>신전의
+  수호자
+  시나는
+  이를
+  막아보려
+  하지만<br>그의
+  강대한
+  분노
+  앞에
+  마을은
+  돌이킬
+  수
+  없는
+  위험에
+  빠진다.<br><br><b>
+  “
+  초극하라!
+  시공의
+  운명이여!
+  ”
+  </b><br>지우와
+  피카츄
+  일행은
+  미래를
+  구하기
+  위
+  �
+  �
+  �
+  시공간을
+  초월한<br>모험을
+  떠나고,
+  그
+  곳에서
+  엄청난
+  비밀을
+  마주하는데
+  …
+  ),
+  casting=Casting(items=[
+  Item(CinemaNameKR=null,
+  MovieNameKR=null,
+  MovieNameUS=null,
+  ViewGradeCOde=null,
+  CinemaID=null,
+  MovieCode=19764,
+  PlayDt=null,
+  StartTime=null,
+  EndTime=null,
+  screenName=null,
+  StaffName=유야마
+  쿠니히코,
+  Role=감독),
+  Item(CinemaNameKR=null,
+  MovieNameKR=null,
+  MovieNameUS=null,
+  ViewGradeCOde=null,
+  CinemaID=null,
+  MovieCode=19764,
+  PlayDt=null,
+  StartTime=null,
+  EndTime=null,
+  screenName=null,
+  StaffName=정재헌,
+  Role=배우),
+  Item(CinemaNameKR=null,
+  MovieNameKR=null,
+  MovieNameUS=null,
+  ViewGradeCOde=null,
+  CinemaID=null,
+  MovieCode=19764,
+  PlayDt=null,
+  StartTime=null,
+  EndTime=null,
+  screenName=null,
+  StaffName=오타니
+  이쿠에,
+  Role=배우),
+  Item(CinemaNameKR=null,
+  MovieNameKR=null,
+  MovieNameUS=null,
+  ViewGradeCOde=null,
+  CinemaID=null,
+  MovieCode=19764,
+  PlayDt=null,
+  StartTime=null,
+  EndTime=null,
+  screenName=null,
+  StaffName=유상우,
+  Role=배우),
+  Item(CinemaNameKR=null,
+  MovieNameKR=null,
+  MovieNameUS=null,
+  ViewGradeCOde=null,
+  CinemaID=null,
+  MovieCode=19764,
+  PlayDt=null,
+  StartTime=null,
+  EndTime=null,
+  screenName=null,
+  StaffName=이영란,
+  Role=배우)
+])), 19786=LotteMovieDetailCrawlResult(url=19786, movie=Movie(title=분노의 질주: 라이드 오어 다이, titleOther=분노의 질주: 라이드 오어 다이, runtime=140, nations=미국, releaseDate=20230517, story=<b> 아무리 빨리 달려도 과거를 앞지를 순 없다 </b><br><br>돔(빈 디젤)과 그의 패밀리 앞에 나타난 운명의 적 단테(제이슨 모모아).<br>과거의 그림자는 돔의 모든 것을 파괴하기 위해 달려온다.<br>단테에 의해 산산히 흩어진 패밀리들은<br>모두 목숨을 걸고 맞서야 하는 함정에 빠지고 마는데..<br><br><b> 달리거나 죽거나, 그들의 마지막 질주가 시작된다! </b>), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19786, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=루이스 리터리어, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19786, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=빈 디젤, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19786, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=제이슨 모모아, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19786, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=제이슨 스타뎀, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19786, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=샤를리즈 테론, Role=배우)])), 19742=LotteMovieDetailCrawlResult(url=19742, movie=Movie(title=슬픔의 삼각형, titleOther=슬픔의 삼각형, runtime=147, nations=미국, releaseDate=20230517, story=호화 크루즈에 #협찬 으로 승선한 인플루언서 모델 커플.<br>각양각색의 부자들과 휴가를 즐기던 사이,<br>뜻밖의 사건으로 배가 전복되고 8명만이 간신히 무인도에 도착한다.<br>할 줄 아는 거라곤 구조 대기뿐인 사람들… 이때 존재감을 드러내는 건,<br><br><b> “여기선 내가 캡틴입니다. 자, 내가 누구라고요?” </b>), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19742, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=송행기, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19742, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=우디 해럴슨, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19742, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=해리스 디킨슨, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19742, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=샬비 딘, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19742, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=돌리 드 레온, Role=배우)])), 19885=LotteMovieDetailCrawlResult(url=19885, movie=Movie(title=스크림6, titleOther=스크림6, runtime=122, nations=미국, releaseDate=20230524, story=고스트페이스의 습격에서 살아남은 생존자들이 우즈보로를 떠나 뉴욕에서 새로운 삶을 시작하지만, 다시금 과거의 살인마에게 쫓기게 되는 이야기), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19885, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=송행기, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19885, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=제나 오르테가, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19885, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=멜리사 바레라, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19885, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=커트니 콕스, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19885, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=스킷 울리히, Role=배우)])), 19763=LotteMovieDetailCrawlResult(url=19763, movie=Movie(title=사랑하는 당신에게, titleOther=사랑하는 당신에게, runtime=83, nations=기타, releaseDate=20230531, story=사랑하는 아내를 갑자기 잃고 홀로된 제르맹은<br>자식들의 지나친 걱정과 관심을 한 몸에 받게 된다.<br>시간표까지 짜서 자신을 돌보는 자식들의 극성에 시달리던 제르맹은<br>아내와의 오래전 약속을 지키기 위해 남몰래 현대 무용단에 입단한다.<br><br>그의 어설픈 몸짓은 뜻밖에도 무용단을 이끄는 세계적인 무용가의 관심을 끌게 되고, <br>급기야 공연을 불과 4주 남기고 제르맹을 주역으로 한 새로운 안무가 만들어진다.<br>한편, 공연 사실을 비밀로 하���픈 제르맹의 행동은<br>그를 걱정하는 가족들에게 뜻하지 않은 오해를 불러일으키는데…), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19763, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=하지원, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19763, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=프랑수아 베를레앙, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19763, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=라 리보트, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19763, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=케이시 모텟 클라인, Role=배우)])), 19743=LotteMovieDetailCrawlResult(url=19743, movie=Movie(title=드림팰리스, titleOther=드림팰리스, runtime=112, nations=한국, releaseDate=20230531, story=산업재해로 남편을 잃은 ‘혜정’과 ‘수인’은<br>진상규명을 위해 함께 싸운 사이다.<br>‘혜정’은 합의금을 받고 싸움을 멈췄지만, <br>‘수인’은 다른 유가족들과 아직도 농성 중이다.<br><br>남편 목숨 값으로 분양받은 아파트<br>‘드림팰리스’에서 새 삶을 시작한 ‘혜정’은<br>‘수인’에게 새 집을 꿈꾸라고 부추긴다.<br>처음엔 단칼에 거절하던 ‘수인’도<br>어느새 ‘드림팰리스’를 꿈꾸게 되는데…<br><br><b> 맞잖아요? 행복은 아파트 분.양.순. </b>), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19743, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=가성문, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19743, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=김선영, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19743, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=이윤지, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19743, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=최민영, Role=배우)])), 19683=LotteMovieDetailCrawlResult(url=19683, movie=Movie(title=존 윅 4, titleOther=존 윅 4, runtime=169, nations=미국, releaseDate=20230412, story=죽을 위기에서 살아난 ‘존 윅’은 <br>‘최고 회의’를 쓰러트릴 방법을 찾아낸다.<br>&nbsp;<br>비로소 완전한 자유의 희망을 보지만, <br>NEW 빌런 ‘그라몽 후작’과 전 세계의 최강 연합은 <br>‘존 윅’의 오랜 친구까지 적으로 만들어 버리고, <br><br>새로운 위기에 놓인 ‘존 윅’은 <br>최후의 반격을 준비하는데,,<br><br><b> 레전드 액션 블록버스터 &lt;존 윅&gt;의 <br>새로운 챕터가 열린다! </b>), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19683, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=송행기, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19683, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=키아누 리브스, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19683, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=견자단, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19683, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=빌 스카스가드, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19683, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=로렌스 피시번, Role=배우)])), 19168=LotteMovieDetailCrawlResult(url=19168, movie=Movie(title=슈퍼 마리오 브라더스, titleOther=슈퍼 마리오 브라더스, runtime=92, nations=미국, releaseDate=20230426, story=<b> 따단-딴-따단-딴 ?<br>전 세계를 열광시킬 올 타임 슈퍼 어드벤처의 등장! </b><br><br>뉴욕의 평범한 배관공 형제 '마리오'와 ‘루이지’는<br>배수관 고장으로 위기에 빠진 도시를 구하려다<br>미스터리한 초록색 파이프 안으로 빨려 들어가게 된다.<br><br>파이프를 통해 새로운 세상으로 차원 이동하게 된 형제.<br>형 '마리오'는 뛰어난 리더십을 지닌 '피치'가 통치하는 버섯왕국에 도착하지만<br>동생 '루이지'는 빌런 '쿠파'가 있는 다크랜드로 떨어지며 납치를 당하고<br>‘마리오’는 동생을 구하기 위해 ‘피치’와 ‘키노피오’의 도움을 받아<br>'쿠파'에 맞서기로 결심한다.<br><br>그러나 슈퍼스타로 세상을 지배하려는 그의 강력한 힘 앞에<br>이들은 예기치 못한 위험에 빠지게 되는데...!<br><br><b> 동생을 구하기 위해! 세상을 지키기 위해!<br>'슈퍼 마리오'로 레벨업 하기 위한 '마리오'의 스펙터클한 스테이지가 시작된다! </b>), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19168, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=마이클 젤레닉, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19168, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=크리스 프랫, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19168, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=안야 테일러 조이, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19168, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=잭 블랙, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19168, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=세스 로건, Role=배우)])), 19586=LotteMovieDetailCrawlResult(url=19586, movie=Movie(title=아기공룡 둘리-얼음별 대모험, titleOther=아기공룡 둘리-얼음별 대모험, runtime=84, nations=한국, releaseDate=20230524, story=아기공룡 둘리는 1억 년 전 거대한 빙산 조각에 갇혀 엄마와 헤어지게 되고 그 안에서 깊은 잠에 빠지게 된다. 어느 날 한강으로 빙산 조각이 흘러 들어오게 되고 조금씩 얼음이 깊은 잠에서 깨어난 둘리는 우연히 쌍문동에 사는 소시민 고길동의 집에 머물게 되는데, 호기심 많고 말썽꾸러기인 둘리로 인해 고길동의 집은 그날부터 하루도 맘 편할 날이 없다.<br><br>거기에 ‘공포의 공갈 젖꼭지’ 희동이, 외계인 도우너, 귀부인 타조 또치, 가수지망생 마��콜이 가세하고 이들은 타임 코스모스를 타고 빨리 어른이 되기 위해 미래로 여행을 떠난다. 그러나 타임 코스모스의 작동실수로 이들은 우주의 미로 속, 얼음별로 향하게 되고 그곳에서 둘리는 꿈에 그리던 엄마를 만나게 된다. 하지만 얼음별은 우주의 악당 바요킹에 의해 지배당하고 있었고 둘리 일행은 바요킹의 추격에 쫓기기 시작한다.), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19586, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=임경원, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19586, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=박영남, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19586, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=이인성, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19586, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=정미숙, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19586, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=이선, Role=배우)])), 19481=LotteMovieDetailCrawlResult(url=19481, movie=Movie(title=스즈메의 문단속, titleOther=스즈메의 문단속, runtime=121, nations=일본, releaseDate=20230308, story=<b> “이 근처에 폐허 없니? 문을 찾고 있어” </b><br>규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는<br>문을 찾아 여행 중인 청년 ‘소타’를 만난다.<br>&nbsp;<br>그의 뒤를 쫓아 산속 폐허에서 발견한 낡은 문.<br>‘스즈메’가 무언가에 이끌리듯 문을 열자 마을에 재난의 위기가 닥쳐오고<br>가문 대대로 문 너머의 재난을 봉인하는 ‘소타’를 도와 간신히 문을 닫는다.<br>&nbsp;<br><b> “닫아야만 하잖아요, 여기를!” </b><br>재난을 막았다는 안도감도 잠시, <br>수수께끼의 고양이 ‘다이진’이 나타나 ‘소타’를 의자로 바꿔 버리고<br>일본 각지의 폐허에 재난을 부르는 문이 열리기 시작하자<br>‘스즈메’는 의자가 된 ‘소타’와 함께 재난을 막기 위한 여정에 나선다.<br>&nbsp;<br><b> “꿈이 아니었어” </b><br>규슈, 시코쿠, 고베, 도쿄<br>재난을 막기 위해 일본 전역을 돌며 필사적으로 문을 닫아가던 중<br>어릴 적 고향에 닿은 ‘스즈메’는 잊고 있던 진실과 마주하게 되는데…), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19481, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=신카이 마코토, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19481, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=하라 나노카, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19481, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=마츠무라 호쿠토, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19481, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=후카츠 에리, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19481, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=마츠모토 코시로, Role=배우)])), 19581=LotteMovieDetailCrawlResult(url=19581, movie=Movie(title=에브리씽 에브리웨어 올 앳 원스+, titleOther=에브리씽 에브리웨어 올 앳 원스+, runtime=150, nations=미국, releaseDate=20230301, story=미국에 이민와 힘겹게 세탁소를 운영하던 에블린은<br>세무당국의 조사에 시달리던 어느 날<br>남편의 이혼 요구와 삐딱하게 구는 딸로 인해 대혼란에 빠진다.<br>그 순간 에블린은 멀티버스 안에서 수천, 수만의 자신이<br>세상을 살아가고 있다는 사실을 알게 되고, <br>그 모든 능력을 빌려와 위기의 세상과 가족을 구해야하는 운명에 처한다.), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19581, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=김기영, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19581, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=양자경, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19581, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=스테파니 수, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19581, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=키 호이 콴, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19581, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=제이미 리 커티스, Role=배우)])), 19826=LotteMovieDetailCrawlResult(url=19826, movie=Movie(title=줄리아의 인생극장, titleOther=줄리아의 인생극장, runtime=120, nations=프랑스, releaseDate=20230524, story=2052년 파리. 80세의 줄리아는 생을 만끽했다.<br>인생은 매 순간 우연의 연속이었고, 인생은 드라마틱하게 흘렀다.<br>만일 그날 여권을 잊어버리지 않았다면!<br>서점에서 책을 떨어뜨리지 않았다면!<br>스쿠터 운전을 하지 않았더라면!<br>매 순간 사소한 일상의 조각들이 줄리아의 인생을 휘젓는다.), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19826, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=안성기, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19826, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=루 드 라쥬, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19826, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=라파엘 페르소나즈, Role=배우)])), 19803=LotteMovieDetailCrawlResult(url=19803, movie=Movie(title=범죄도시3, titleOther=범죄도시3, runtime=105, nations=한국, releaseDate=20230531, story=<b> 대체불가 괴물형사 마석도, 서울 광수대로 발탁! </b><br><br>베트남 납치 살해범 검거 후 7년 뒤,<br>‘마석도’(마동석)는 새로운 팀원들과 함께 살인사건을 조사한다.<br>사건 조사 중, ‘마석도’는 신종 마약 사건이 연루되었음을 알게 되고 수사를 확대한다.<br>한편, 마약 사건의 배후인 '주성철'(이준혁)은 계속해서 판을 키워가고<br>약을 유통하던 일본 조직과 '리키'(아오키 무네타카)까지 한국에 들어오며<br>사건의 규모는 점점 더 ���져가는데...<br><br><b> 나쁜 놈들 잡는 데 이유 없고 제한 없다<br>커진 판도 시원하게 싹 쓸어버린다! </b>), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19803, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=이상용, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19803, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=마동석, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19803, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=이준혁, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19803, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=아오키 무네타카, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19803, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=이범수, Role=배우)])), 19704=LotteMovieDetailCrawlResult(url=19704, movie=Movie(title=클로즈, titleOther=클로즈, runtime=104, nations=기타, releaseDate=20230503, story=서로가 세상의 전부였던 레오와 레미는 친구들에게 관계를 의심받기 시작한다.<br>이후 낯선 시선이 두려워진 레오는 레미와 거리를 두고, <br>홀로 남겨진 레미는 걷잡을 수 없는 감정에 빠져들고 만다.<br>점차 균열이 깊어져 가던 어느 날, <br>레오는 믿을 수 없는 현실을 마주하게 되는데…), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19704, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=루카스 돈트, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19704, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=에덴 담브린, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19704, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=구스타브 드 와엘, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19704, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=에밀리 드켄, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19704, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=레아 드루케, Role=배우)])), 19802=LotteMovieDetailCrawlResult(url=19802, movie=Movie(title=라이드 온, titleOther=라이드 온, runtime=125, nations=중국, releaseDate=20230531, story=<b> 스턴트맨 X 스턴트마 어셈블!<br>인생역전을 향한 무한질주가 시작된다! </b><br><br>한때 잘 나갔던 전설의 스턴트맨 ‘루오’(성룡).<br>유일한 파트너마 ‘레드 헤어’가 경매에 부쳐질 위기에 처하자<br>어쩔 수 없이 소원했던 딸 ‘바오’(류호존)에게 연락해 도움을 청한다.<br>‘바오’는 자신의 변호사 남자친구 ‘미키’(곽기린)와 이를 해결하고자 하고, <br>조금씩 ‘루오’에게도 마음을 열어간다.<br><br>그러던 어느 날, ‘루오’가 ‘레드 헤어’를 지키기 위해 싸웠던 콤비 액션 영상이<br>SNS를 통해 화제를 모으게 되고, 유명 영화에 참여할 기회까지 찾아오는데…!<br>스턴트 생활을 청산하길 바라는 딸 ‘바오’와 인생 역전의 기회에서 고민하는 ‘루오’.<br>과연, 그는 가족과 커리어를 모두 지킬 수 있을 것인가?!), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19802, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=래리 양, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19802, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=성룡, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19802, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=류호존, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19802, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=곽기린, Role=배우)])), 19824=LotteMovieDetailCrawlResult(url=19824, movie=Movie(title=빅트립2: 아기곰 배달 대작전, titleOther=빅트립2: 아기곰 배달 대작전, runtime=90, nations=러시아, releaseDate=20230527, story=<b> 또! 하늘에서 아기가 떨어졌다?! </b><br><br>아기 팬더를 배달한 게 엊그제 같은데, <br>이번엔 아기 반달곰이 뚝! 떨어졌다<br><br>그런데 무려, 동물왕국 대통령 후보의 아들이라고?!<br><br>‘믹믹’과 ‘오스카’는 동물왕국의 평화를 위해, <br>다시 한번 아기를 배달하기로 결심한다<br><br><b> 5월! 애니멀 특송단, 배달 시작합니다! </b>), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19824, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=바실리 로벤스키, Role=감독)])), 19874=LotteMovieDetailCrawlResult(url=19874, movie=Movie(title=인어공주, titleOther=인어공주, runtime=135, nations=미국, releaseDate=20230524, story=<b> “내 안의 목소리를 따라<br>자유롭게 꿈꾸고 사랑할 거야” </b><br><br>아틀란티카 바다의 왕 ‘트라이튼’의 사랑스러운 막내딸인 인어 ‘에리얼’은<br>늘 인간들이 사는 바다 너머 세상으로의 모험을 꿈꾼다.<br><br>어느 날, 우연히 바다 위로 올라갔다가<br>폭풍우 속 가라앉는 배에 탄 인간 ‘에릭 왕자’의 목숨을 구해준다.<br>갈망하던 꿈과 운명적인 사랑을 이루기 위해 용기를 낸 ‘에리얼’은<br>사악한 바다 마녀 ‘울슐라’와의 위험한 거래를 통해 다리를 얻게 된다.<br><br>드디어 바다를 벗어나 그토록 원하던 인간 세상으로 가게 되지만, <br>그 선택으로 ‘에리얼’과 아틀란티카 왕국 모두 위험에 처하게 되는데…<br><br><b> 바닷속, 그리고 그 너머<br>아름다운 꿈과 사랑의 멜로디가 펼쳐진다! </b>), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19874, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=롭 마샬, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19874, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=할리 베일리, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19874, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=멜리사 맥카시, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19874, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=조나 하우어-킹, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19874, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=하비에르 바르뎀, Role=배우)])), 19753=LotteMovieDetailCrawlResult(url=19753, movie=Movie(title=극장판 짱구는 못말려: 동물소환 닌자 배꼽수비대, titleOther=극장판 짱구는 못말려: 동물소환 닌자 배꼽수비대, runtime=100, nations=일본, releaseDate=20230504, story=<b> 사실... 짱구는 닌자 가문의 후계자였다?! </b><br><br>어느 날 ‘짱구‘와 동갑내기인 5살 ‘진구’를 데리고, <br>짱구 가족을 찾아온 수상한 여성.<br>서로의 아이가 바뀌었다는 충격적인 소식을 전한다.<br><br>하루아침에 닌자 가문의 후계자 ‘진구’로 불리게 된 짱구는<br>‘부리부리 엉덩이 분신술’로 닌자 유치원을 초토화시킨다.<br><br>한편, 떡잎마을에 남겨진 진구와 짱구 가족은<br>짱구를 찾으러 닌자 마을로 향하고, <br>세��의 중심인 ‘지구의 배꼽’이 흔들리기 시작하며, <br>지구가 붕괴될 위기에 처하는데…<br><br><b> 과연 짱구는 세상을 지켜낼 수 있을까?! </b>), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19753, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=하시모토 마사카즈, Role=감독)])), 19896=LotteMovieDetailCrawlResult(url=19896, movie=Movie(title=미드나잇 스완, titleOther=미드나잇 스완, runtime=124, nations=일본, releaseDate=20230601, story=<b> 고독한 두 사람이 서로를 이해해가는, 세상에서 가장 아름다운 이야기 </b><br><br>도쿄의 트랜스젠더 바에서 쇼걸로 일하고 있는 ‘나기사’<br>자신이 트랜스젠더임을 가족들에게는 비밀로 하고 있다.<br>그러던 중 고향 히로시마에서 온 조카 ‘이치카’를 잠시 맡게 된다.<br><br>‘이치카’는 엄마 ‘사오리’의 방치와 학대로 마음을 닫아버린 소녀.<br>삼촌인 줄 알고 찾아온 ‘나기사’의 모습을 보고 적잖이 당황한다.<br>그리고 세상에 등을 돌린 두 사람의 기묘한 동거 생활이 시작된다.<br><br>남몰래 발레를 동경하던 ‘이치카’는<br>레슨비를 벌기 위해 친구가 추천한 불법 아르바이트를 하다가<br>결국 경찰서에 가게 된다.<br><br>이 사건으로 인해 ‘이치카’가 발레에 소질이 있음을 알게 된 ‘나기사’.<br>상처받은 이치카를 다정하게 위로해주고 이치카를 위해 살기로 결심한다.<br>그리고 한편으로 ‘엄마가 되고 싶다’는 꿈을 꾸기 시작한다.), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19896, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=이필혁, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19896, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=쿠사나기 츠요시, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19896, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=핫토리 미사키, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19896, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=타나카 슌스케, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19896, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=요시무라 카이토, Role=배우)])), 19774=LotteMovieDetailCrawlResult(url=19774, movie=Movie(title=문재인입니다, titleOther=문재인입니다, runtime=114, nations=한국, releaseDate=20230510, story=<b> 모두가 알지만 누구도 한 단어로 정의하지 못한 사람<br>그래서 자꾸만 더 알고 싶은 사람, 마침내 이해하고 싶은 사람<br>전직 대통령, 현직 평산마을 주민, 어디서도 볼 수 없었던 ‘사람 문재인’의 이야기 </b><br>&nbsp;<br>대한민국 제19대 대통령으로 5년의 임기를 마치고 퇴임한 문재인 전 대통령은 평산마을에서 모든 짐을 내려놓고 새 삶을 꾸린다. 텃밭을 가꾸고 개와 고양이의 밥을 챙기는 것이 일과이고, 수염을 깎지 않고 편한 옷을 입을 수 있는 ���이 자유이다. 퇴임 이후 최초로 공개되는 평산마을에서의 일상과 인터뷰, 오랜 시간 곁에서 동고동락한 이들의 이야기를 통해 ‘사람 문재인’을 이해해보려 한다.), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19774, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=이창재, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19774, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=문재인, Role=배우)])), 19776=LotteMovieDetailCrawlResult(url=19776, movie=Movie(title=가디언즈 오브 갤럭시: Volume 3, titleOther=가디언즈 오브 갤럭시: Volume 3, runtime=150, nations=미국, releaseDate=20230503, story=‘가모라’를 잃고 슬픔에 빠져 있던 ‘피터 퀼’이 위기에 처한 은하계와 동료를 지키기 위해 다시 한번 가디언즈 팀과 힘을 모으고, 성공하지 못할 경우 그들의 마지막이 될지도 모르는 미션에 나서는 이야기), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19776, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=덴젤 워싱턴, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19776, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=크리스 프랫, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19776, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=조 샐다나, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19776, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=데이브 바티스타, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19776, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=카렌 길런, Role=배우)])), 19798=LotteMovieDetailCrawlResult(url=19798, movie=Movie(title=말없는 소녀, titleOther=말없는 소녀, runtime=95, nations=기타, releaseDate=20230531, story=아일랜드의 작은 마을 가난한 집의 어린 소녀 코오트는<br>여름 동안 먼 친척 부부에게 맡겨진다.<br>낯선 환경도 잠시... 태어나서 처음으로 마주하는 다정함에<br>마음의 문을 열기 시작하고, <br>어느새 이들 사이엔 떼어놓기 힘든 특별한 우정이 싹튼다.), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19798, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=콤 베어리드, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19798, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=캐서린 클린치, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19798, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=캐리 크로울리, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19798, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=앤드류 베넷, Role=배우)])), 19751=LotteMovieDetailCrawlResult(url=19751, movie=Movie(title=스트리머, titleOther=스트리머, runtime=88, nations=한국, releaseDate=20230510, story=<b> 산 사람은 붉게, 귀신은 파랗게<br>모든 것이 생중계된다! </b><br><br>한 BJ가 남긴 기괴한 영상의 진위를 밝히겠다며<br>한 폐건물로 모인 5명의 스트리머들.<br>각자 라이브 방송을 진행하며 건물을 살펴보던<br>그들의 섬뜩하고 소름 끼치는 현장은<br>그야말로 리얼하게 생중계 되는데…), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19751, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=이필혁, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19751, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=이푸름, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19751, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=권민혁, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19751, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=김모범, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19751, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=김준형, Role=배우)])), 19839=LotteMovieDetailCrawlResult(url=19839, movie=Movie(title=타임 이즈 업2, titleOther=타임 이즈 업2, runtime=90, nations=이탈리아, releaseDate=20230531, story=<b> “숨겨왔던 비밀을 하나씩 마주한다“ </b><br><br>연인이 된 ‘비비안’과 ‘로이’는 미래를 함께 하기 위해,<br>‘로이’가 상속받은 오래된 저택을 매각하기 위해 시칠리아에 간다.<br>바쁜 ‘로이’로 인해 혼자 남은 ‘비비안’은 우연히 ‘안나’를 치료해 주고 친해진다.<br>‘로이’는 그런 ‘비비안’에게 마치 알고 있던 사람처럼 ‘안나’를 조심하라고 한다.<br>‘로이’의 행동이 과민반응이라고 생각하던 그때, <br>‘안나’에게서 ‘로이’와 똑같은 타투를 발견하게 되는데…), casting=Casting(items=[Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19839, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=하지원, Role=감독), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19839, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=벨라 손, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19839, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=벤자민 마스콜로, Role=배우), Item(CinemaNameKR=null, MovieNameKR=null, MovieNameUS=null, ViewGradeCOde=null, CinemaID=null, MovieCode=19839, PlayDt=null, StartTime=null, EndTime=null, screenName=null, StaffName=알마 노체, Role=배우)])), 19811=LotteMovieDetailCrawlResult(url=19811, movie=Movie(title=[FA컵] 결승 맨시티 VS 맨유, titleOther=[FA컵] 결승 맨시티 VS 맨유, runtime=120, nations=한국, releaseDate=20230603, story=), casting=Casting(items=[])), 19858=LotteMovieDetailCrawlResult(url=19858, movie=Movie(title=SUGAㅣAgust D TOUR D-DAY in JAPAN : LIVE VIEWING, titleOther=SUGAㅣAgust D TOUR D-DAY in JAPAN : LIVE VIEWING, runtime=180, nations=한국, releaseDate=20230603, story=), casting=Casting(items=[]))
 }

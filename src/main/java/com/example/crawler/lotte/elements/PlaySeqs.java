@@ -11,7 +11,7 @@ import java.util.List;
 public class PlaySeqs {
 
     @JsonProperty("Items")
-    List<Item> items;
+    List<ItemScreen> itemScreens;
 
     @JsonProperty("ItemCount")
     Integer itemCount;

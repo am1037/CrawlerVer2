@@ -4,6 +4,9 @@ import com.example.crawler.cgv.CrawlerCGV;
 import com.example.crawler.cgv.elements.ColTime;
 import com.example.crawler.cgv.elements.CgvCrawlResult;
 import com.example.crawler.cgv.elements.CgvMovieDetailCrawlResult;
+import com.example.crawler.lotte.CrawlerLotte;
+import com.example.crawler.lotte.elements.LotteCrawlResult;
+import com.example.crawler.lotte.elements.LotteMovieDetailCrawlResult;
 import com.example.database.external.kmdb.KmdbAPI;
 import com.example.database.external.kmdb.KmdbMovieSimpleInfoResponseVO;
 import com.example.database.mongoDB.DoorToMongoDB;
@@ -25,6 +28,8 @@ public class CrawlLogics {
 
     @Autowired
     CrawlerCGV cgv;
+    @Autowired
+    CrawlerLotte lotte;
     @Autowired
     MovieMappingMapper mmm;
     @Autowired
@@ -65,7 +70,7 @@ public class CrawlLogics {
 
         for(TheaterVO t : targetTheaterListVO){
             for(String date : dateList){
-                doorToMongoDB.insertOne(crawl(t.getTheater_id(), date));
+                doorToMongoDB.insertOne(crawlCGV(t.getTheater_id(), date));
             }
         }
 
@@ -74,14 +79,99 @@ public class CrawlLogics {
 
     @RequestMapping("/crawlEverywhere")
     public String crawlOneday(@RequestParam(required = false) String date) {
+        Date now = new Date();
+
+        String resultStr = now.toString() + "<br>";
 
         List<TheaterVO> targetTheaterListVO = tm.selectAllByCompanyName("CGV");
 
         for (TheaterVO t : targetTheaterListVO) {
-            crawl(t.getTheater_id(), date);
+            crawlCGV(t.getTheater_id(), date);
         }
         //crawl(targetTheaterList, date);
-        fillDOCID();
+        //fillDOCID();
+
+        now = new Date();
+        resultStr += now.toString() + "<br>";
+        return "Crawling Done" + "<br>" + resultStr;
+    }
+
+    @RequestMapping("/crawlEverywhereLotte")
+    public String crawlOnedayLotte(@RequestParam(required = false) String date) {
+
+        List<TheaterVO> targetTheaterListVO = new ArrayList<>();//tm.selectAllByCompanyName("LOTTE");
+        TheaterVO vo1 = new TheaterVO();
+        vo1.setTheater_id("1004");
+        targetTheaterListVO.add(vo1);
+
+        //일단 상영관 정보를 받아서 저장한다
+        List<LotteCrawlResult> results = new ArrayList<>();
+        for (TheaterVO t : targetTheaterListVO) {
+            results.add(crawlLotte(t.getTheater_id(), date));
+        }
+
+        //러닝타임 등 판별을 위한 정보를 구성할 맵퍼를 만든다
+        Map<String, LotteMovieDetailCrawlResult> map = new HashMap<>();
+        for(LotteCrawlResult r : results){
+            r.getPlaySeqs().getItemScreens().forEach(x->{
+                if(!map.containsKey(x.getMovieCode())){
+                    map.put(x.getMovieCode(), lotte.crawlMovie(x.getMovieCode()));
+                }
+            });
+        };
+
+        System.out.println(map);
+
+        //kmdb 정보와 맵퍼를 맞춰본다
+        map.forEach((x, y)->{
+            System.out.println(x + " : " + y.getMovie().getTitle());
+            if(mmm.getMappingByUrl(y.getUrl()) == null) {
+                MovieMapping mm = new MovieMapping();
+                mm.setCompany("LOTTE");
+                mm.setDetail_url(y.getUrl());
+                mm.setMy_title(y.getMovie().getTitle());
+
+                //mm.setDocid();
+                //mm.setKmdb_url();
+
+                System.out.println("kmdb go");
+                KmdbMovieSimpleInfoResponseVO vo = kmdbAPI.getMovieInfoByTitle(y.getMovie().getTitle());
+                System.out.println("kmdb done");
+                if (vo.getMovies(0) == null) {
+                    mm.setDocid("!NOT FOUND");
+                    mm.setKmdb_url("!NOT FOUND");
+                    mm.setPosters("!NOT FOUND");
+                } else if (vo.getMovies(0).size() == 1) {
+                    mm.setDocid(vo.getMovies(0).get(0).getDOCID());
+                    mm.setKmdb_url(vo.getMovies(0).get(0).getKmdbUrl());
+                    mm.setPosters(vo.getMovies(0).get(0).getPosters());
+                } else {
+                    List<KmdbMovieSimpleInfoResponseVO.Collection.Movie> movieList;
+                    movieList = vo.getMovies(0).stream().filter(m -> m.getRuntime().equals(y.getMovie().getRuntime())).collect(Collectors.toList());
+                    if (movieList.size() == 1) {
+                        mm.setDocid(movieList.get(0).getDOCID());
+                        mm.setKmdb_url(movieList.get(0).getKmdbUrl());
+                        mm.setPosters(movieList.get(0).getPosters());
+                    } else if (movieList.size() > 1) {
+                        movieList = vo.getMovies(0).stream().filter(m -> m.getTitleEng().equals(y.getMovie().getTitleOther())).collect(Collectors.toList());
+                        if (movieList.size() == 1) {
+                            mm.setDocid(movieList.get(0).getDOCID());
+                            mm.setKmdb_url(movieList.get(0).getKmdbUrl());
+                            mm.setPosters(movieList.get(0).getPosters());
+                        } else {
+                            mm.setDocid("!NOT FOUND");
+                            mm.setKmdb_url("!NOT FOUND");
+                            mm.setPosters("!NOT FOUND");
+                        }
+                    } else {
+                        mm.setDocid("!NOT FOUND");
+                        mm.setKmdb_url("!NOT FOUND");
+                        mm.setPosters("!NOT FOUND");
+                    }
+                }
+                mmm.insertUrl(mm);
+            }
+        });
 
         return "Crawling Done";
     }
@@ -177,8 +267,8 @@ public class CrawlLogics {
         return returnStr;
     }
 
-    public CgvCrawlResult crawl(@RequestParam String theaterId,
-                                @RequestParam String date) {
+    public CgvCrawlResult crawlCGV(@RequestParam String theaterId,
+                                   @RequestParam String date) {
         System.out.println("Crawling Start... " + theaterId + " " + date);
         System.out.println("Crawling Start... " + theaterId + " : " + theaterCode("CGV", theaterId));
         List<ColTime> colTimeList;
@@ -227,6 +317,23 @@ public class CrawlLogics {
             doorToMongoDB.insertOne(e.getMessage(), theaterId, date);
         }
         return null;
+    }
+
+    // crawlLotte?theater_id=1004&date=20230603
+    @RequestMapping("/crawlLotte")
+    public LotteCrawlResult crawlLotte(@RequestParam String theater_id,
+                                       @RequestParam String date){
+        System.out.println("Crawling Start... " + theater_id + " " + date);
+        LotteCrawlResult result = lotte.crawl(theater_id, date);
+
+//        Map<String, String> codeMap = new HashMap<>();
+//        result.getPlaySeqs().getItemScreens().forEach(x -> {
+//            codeMap.put(x.getMovieCode(), null);
+//        });
+//
+//        codeMap.replaceAll((k, v) -> lotte.crawlMovie(k).getMovie().getRuntime());
+
+        return result;
     }
 
     public boolean isExistMongo(String url) {
