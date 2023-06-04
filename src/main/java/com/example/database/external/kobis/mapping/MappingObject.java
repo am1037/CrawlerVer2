@@ -14,6 +14,7 @@ public class MappingObject {
     String title;
     Integer runtime;
     String grade;
+    boolean gradeValid = true;
 
     public MappingObject() {
         // default constructor
@@ -35,5 +36,8 @@ public class MappingObject {
         this.title = response.getKobisMovieInfoResult().getMovieInfo().getMovieNm();
         this.runtime = response.getKobisMovieInfoResult().getMovieInfo().getShowTm();
         this.grade = response.getKobisMovieInfoResult().getMovieInfo().getAudits().get(0).getWatchGradeNm();
+        if(response.getKobisMovieInfoResult().getMovieInfo().getAudits().size() != 1){
+            this.gradeValid = false;
+        }
     }
 }

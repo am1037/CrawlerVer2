@@ -34,7 +34,6 @@ public class Movie {
     String grade;
     @JsonSetter("ViewGradeCode")
     public void setGrade(String age) {
-        System.out.println(age);
         //left only numbers
         this.grade = age.replaceAll("[^0-9]", "");
         if(this.grade.equals("")){

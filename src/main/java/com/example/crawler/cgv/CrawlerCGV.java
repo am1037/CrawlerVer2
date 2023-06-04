@@ -123,7 +123,7 @@ public class CrawlerCGV {
                 String subInfoString = e2.getElementsByClass("on").get(1).text();
                     String[] subInfo = subInfoString.split(", ");
                     String grade = subInfo[0];
-                    String runtime = subInfo[1].replace("분", "");
+                    String runtime = subInfo[1].replaceAll("[^0-9]", "");
                     List<String> nations = new ArrayList<>(Arrays.asList(subInfo).subList(2, subInfo.length));
                 String releaseDate = e2.getElementsByClass("on").get(2).text();
                 String[] actors = actorString.split(" , ");
