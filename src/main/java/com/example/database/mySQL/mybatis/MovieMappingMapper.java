@@ -33,6 +33,9 @@ public interface MovieMappingMapper {
     @Update("UPDATE popcorn.movie_mapping SET my_title = #{my_title} WHERE detail_url = #{detail_url}")
     int updateTitleByUrl(@Param("detail_url") String detail_url, @Param("my_title") String my_title);
 
+    @Update("UPDATE popcorn.movie_mapping SET kobis_movieCd = #{kobis_movieCd} WHERE detail_url = #{detail_url}")
+    int updateKobisCdByUrl(@Param("kobis_movieCd") String kobis_movieCd, @Param("detail_url") String detail_url);
+
 //    나중에 mmm truncate 할 일이 있으면 씁시다!! 근데 쓸 일이 없으면 좋겟당 ㅎ
 //    truncate 한 다음에 이걸 돌린 다음에 c3, c2를 쓰면 됩니당!
 //    INSERT INTO popcorn.movie_mapping (detail_url)
