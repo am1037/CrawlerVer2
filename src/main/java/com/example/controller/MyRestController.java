@@ -17,7 +17,7 @@ public class MyRestController {
 
     @RequestMapping("/")
     public String hello() {
-        System.out.println(mmm.getAllMappings());
+        System.out.println(mmm.selectAll());
         return "Hello World!";
     }
 }

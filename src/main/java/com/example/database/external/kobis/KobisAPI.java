@@ -23,7 +23,7 @@ public class KobisAPI {
     KobisOpenAPIRestService kobis = new KobisOpenAPIRestService(kobis_KEY);
     public static void main(String[] args) throws Exception{
         KobisAPI kobisAPI = new KobisAPI();
-        kobisAPI.byMovieNm("스크림").forEach(x -> {
+        kobisAPI.byMovieNm("스프린터").forEach(x -> {
             System.out.println(x);
         });
         System.out.println(kobisAPI.byMovieCd("20231843"));

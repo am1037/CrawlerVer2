@@ -44,15 +44,15 @@ public class LotteCrawlResult extends MyCrawlingResult {
     @JsonProperty("PlaySeqs")
     PlaySeqs playSeqs;
 
-    public List<ScreenVO> toScreenVOs(Map<String, String> map) {
+    public List<ScreenVO> toScreenVOs() {
         //map : movieCode NNNNN, runtime NNN
         List<ScreenVO> screenVOs = new ArrayList<>();
         for (ItemScreen i : playSeqs.getItemScreens()) {
                 ScreenVO screenVO = new ScreenVO();
-                screenVO.setTitle(i.getCinemaNameKR());
+                screenVO.setTitle(i.getMovieNameKR());
                 screenVO.setCompany(company);
                 screenVO.setScreen_name(i.getScreenName());
-                screenVO.setRuntime(Integer.parseInt(map.get(i.getMovieCode())));
+                //screenVO.setRuntime(Integer.parseInt(map.get(i.getMovieCode())));
                 screenVO.setDetail_url("https://www.lottecinema.co.kr/NLCHS/Movie/MovieDetailView?movie="+i.getMovieCode());
                 screenVO.setTime(i.getStartTime());
                 screenVO.setTime_end(i.getEndTime());

@@ -31,7 +31,7 @@ public class MappingMapper {
         if(responses.size()==1){
             return responses.get(0).getKobisMovieInfoResult().getMovieInfo().getMovieCd();
         }else if(responses.size()==0){
-            return "!NOT FOUND!";
+            return null;
         }
         else {
             for(KobisMovieInfoResponse response : responses){
@@ -52,7 +52,7 @@ public class MappingMapper {
                 return responses.get(0).getKobisMovieInfoResult().getMovieInfo().getMovieCd();
             }
         }
-        return "!NOT FOUND!";
+        return null;
     }
 
 }
